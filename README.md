@@ -1,6 +1,8 @@
 # Steam
 
 #### Better clone for Steam Platform. 1st Year Project.
+[![Button](https://img.shields.io/badge/Live_Preview-Click_Here-blue)]([https://yourlink.com](https://kareemadelawwad.github.io/Steam/dist/))
+
 
 ![Steam-UI](https://cdn.akamai.steamstatic.com/store/about/social-og.jpg)
 
@@ -11,7 +13,7 @@
 
 1. Clone the repo.
 
-2. After Opening the project folder using VS Code, Open the termianl.
+2. Open the terminal After Opening the project folder using VS Code.
 
 - ### Install Dependencies
   _(NodeJS should be installed)_
