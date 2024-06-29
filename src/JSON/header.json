@@ -1,0 +1,14 @@
+{
+    "store": [
+        { "href": "/", "label": "Home" },
+        { "href": "/Browse", "label": "Browse" },
+        { "href": "/Discover", "label": "Discover" },
+        { "href": "/Points-Shop", "label": "Points Shop" },
+        { "href": "/Curators", "label": "Curators", "notFound": true },
+        { "href": "/Gift Cards", "label": "Gift Cards", "notFound": true },
+        { "href": "/News", "label": "News", "notFound": true }
+    ],
+    "library": ["Home", "Collections", "News and Updates"],
+    "community": ["Home", "Discussions", "Workshop", "Market", "Broadcasts"]
+}
+  
