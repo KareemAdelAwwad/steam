@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "MotivaSans";
+    src: url(../public/font/MotivaSansRegular.woff.ttf);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "MotivaSans";
+    src: url(../public/font/MotivaSansBold.woff.ttf);
+    font-weight: 700;
+    font-style: normal;
+  }
+  * {
+    font-family: "MotivaSans", sans-serif;
+  }
+}
+
+@layer components{
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  /* Heading */
+  .heading-large {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .heading-medium {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .heading-small {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  /* body */
+  .body-large {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .body-medium {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .body-small {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

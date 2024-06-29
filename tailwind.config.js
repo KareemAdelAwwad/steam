@@ -25,6 +25,9 @@ export default {
         yellow: "#C1B15F",
       },
     },
+    fontFamily: {
+      MotivaSans: ["Motiva Sans", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],

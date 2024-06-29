@@ -1,11 +1,21 @@
+import { Route, createRoutesFromElements, RouterProvider, createBrowserRouter } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import StoreLayout from "./layouts/StoreLayout";
+import Home from "./pages/client-store/Home";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<MainLayout/>}>
+        <Route path="/store" element={<StoreLayout/>}>
+          <Route index element={<Home/>}/>
+        </Route>
+      </Route>
+    </>
+  )
+);
 function App() {
-  return (
-    <div className="p-8">
-      <h1 className="text-6xl text-text-dim bg-bg-tertiary pt-4 pb-5 rounded-lg text-center">
-        Hello, Steam!
-      </h1>
-    </div>
-  );
+  return <RouterProvider router={router}/>;
 }
 
 export default App;
