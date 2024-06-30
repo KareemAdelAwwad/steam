@@ -23,7 +23,7 @@
 @layer components {
   .steam-gradient {
     @apply bg-gradient-to-b;
-    background: linear-gradient(to bottom, #040011 0%, #202B3C 100%);
+    background: linear-gradient(to bottom, #040011 0%, #202B3C 40%);
   }
 }
 

@@ -1,0 +1,52 @@
+{
+    "f2p":[
+        {
+            "id":"wuthering-waves",
+            "name":"Wuthering Waves",
+            "image":"/public/assets/Games/Covers/wuthering-waves.jpg",
+            "price":"Free"
+        },
+        {
+            "id":"halo-infinite",
+            "name":"Hallo Infinite",
+            "image":"/public/assets/Games/Covers/Halo Infinite.jpg",
+            "price":"Free"
+        },
+        {
+            "id":"destiny-2",
+            "name":"Destiny 2",
+            "image":"/public/assets/Games/Covers/destiny2.jpg",
+            "price":"Free"
+        },
+        {
+            "id":"apex-legends",
+            "name":"Apex Legends",
+            "image":"/public/assets/Games/Covers/APEX-Legends.jpg",
+            "price":"Free"
+        },
+        {
+            "id":"fall-guys",
+            "name":"Fall Guys",
+            "image":"/public/assets/Games/Covers/fall-guys.jpg",
+            "price":"Free"
+        },
+        {
+            "id":"counter-strike-2",
+            "name":"Counter Strike 2",
+            "image":"/public/assets/Games/Covers/Counter Strick 2.png",
+            "price":"Free"
+        },
+        {
+            "id":"sheepy",
+            "name":"Sheepy",
+            "image":"/public/assets/Games/Covers/Sheepy.jpg",
+            "price":"Free"
+        },
+        {
+            "id":"valorant",
+            "name":"Valorant",
+            "image":"/public/assets/Games/Covers/VALORANT.jpg",
+            "price":"Free"
+        }
+    ]
+}

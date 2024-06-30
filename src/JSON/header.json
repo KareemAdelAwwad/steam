@@ -8,7 +8,17 @@
         { "href": "/Gift Cards", "label": "Gift Cards", "notFound": true },
         { "href": "/News", "label": "News", "notFound": true }
     ],
-    "library": ["Home", "Collections", "News and Updates"],
-    "community": ["Home", "Discussions", "Workshop", "Market", "Broadcasts"]
+    "library": [
+        { "href": "/", "label": "Home" },
+        { "href": "/Collections", "label": "Collections" },
+        { "href": "/News", "label": "News and Updates" }
+    ],
+    "community": [
+        { "href": "/", "label": "Home" },
+        { "href": "/Discussions", "label": "Discussions" },
+        { "href": "/Workshop", "label": "Workshop" },
+        { "href": "/Market", "label": "Market" },
+        { "href": "/Broadcasts", "label": "Broadcasts" }
+    ]
 }
   
