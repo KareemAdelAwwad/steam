@@ -3,9 +3,9 @@ import { IoMdSearch } from "react-icons/io";
 const SearchBar = () => {
   return (
     <div
-      className="bg-[#0E141B30] rounded-md px-3
-    xl:flex lg:w-96 md:hidden xl:w-72
-    items-center justify-between h-full"
+      className="bg-[#0E141B30] rounded-sm px-3
+    xl:flex 2xl:w-[30rem] md:hidden lg:w-[18rem]
+    items-center justify-between h-10"
     >
       <input
         type="text"

@@ -37,7 +37,7 @@ const StoreHeader = () => {
       </header>
 
       <header
-        className="md:flex hidden gap-5 bg-bg-tertiary text-text-main body-medium lg:px-1.5 py-7.5
+        className="md:flex hidden gap-0 bg-bg-tertiary text-text-main body-medium lg:px-1.5 py-7.5
         w-full h-14 md:justify-center lg:justify-between"
       >
         <div className="flex items-center h-full w-fit">
@@ -52,7 +52,7 @@ const StoreHeader = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="flex items-center">
           <SearchBar />
         </div>
 
@@ -73,7 +73,7 @@ const StoreHeader = () => {
           </div>
           <IoSettingsSharp
             size={20}
-            className="social-icon text-text-dim ml-8 md:ml-2 md:hidden lg:flex
+            className="social-icon w-10 h-10 p-2 text-text-dim ml-8 md:ml-2 md:hidden lg:flex
             bg-[#76808C30] hover:bg-[#5A5A5A30] transition-all"
           />
         </div>

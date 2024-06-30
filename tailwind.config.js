@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

@@ -1,7 +1,9 @@
+import heroGIF from '../../assets/cline-store/Header.gif'
+
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <img src={heroGIF} alt="Hero" className="w-full" />
     </div>
   )
 }
