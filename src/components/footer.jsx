@@ -6,10 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-bg-highlight w-full lg:h-[325px] h-fit flex">
       <div
-        className="container mx-auto flex flex-col
+        className="container 2xl:w-[1388px] mx-auto flex flex-col
         lg:flex-row justify-between items-center
-        gap-8
-        lg:px-20 px-5 pt-5 pb-20"
+        gap-8 pt-5 pb-20"
       >
         <div className="items-start h-full">
           <div className="flex flex-row gap-2">

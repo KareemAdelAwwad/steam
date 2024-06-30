@@ -13,13 +13,12 @@
 
 html, body {
   height: 100%;
-  overflow: hidden;
 }
 
 body {
   padding: 0;
   margin: 0;
-  background: #000000;
+  background: #040011;
   font-size: 14px;
   line-height: 1;
   color: white;
