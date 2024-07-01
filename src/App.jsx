@@ -13,7 +13,9 @@ import PointsShop from "./pages/client-store/PointsShop";
 import Wishlist from "./pages/client-store/Wishlist";
 import Cart from "./pages/client-store/Cart";
 
-import NotFound from "./pages/NotFound";
+import "./utilities/CustomPaging.css"
+import NotFound from "./utilities/NotFound";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(

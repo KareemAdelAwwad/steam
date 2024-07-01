@@ -1,0 +1,31 @@
+.slick-dots li button:before {
+    font-size: 0; /* Hide the default dot */
+    width: 35px; /* Width of the custom dot */
+    height: 8px; /* Height of the custom dot */
+    content: ''; /* Required to display the custom dot */
+    display: inline-block;
+    background-color: #0E141B; /* Default dot color */
+    border-radius: 4px; /* Rounded edges */
+    margin: 0 5px; /* Adjust spacing between dots */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    background-color: #4B619B; /* Active dot color (blue) */
+  }
+  
+  .slick-dots {
+    bottom: calc(-1rem - 30px); /* Adjust position if needed */
+  }
+  .slick-dots li {
+    margin: 0 12px; /* Adjust spacing between dots */
+  }
+
+  @media screen and (max-width: 768px){
+    .slick-dots li button:before {
+      width: 24px; /* Width of the custom dot */
+      height: 24px; /* Height of the custom dot */
+    }
+    .slick-dots {
+      padding-right: 10px;
+    }
+  }
