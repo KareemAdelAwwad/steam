@@ -2,7 +2,7 @@ import footerData from "../JSON/footer.json";
 import { FaFacebookF } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 
-const Footer = () => {
+const ClientFooter = () => {
   return (
     <footer className="bg-bg-highlight w-full lg:h-[325px] h-fit flex">
       <div
@@ -83,4 +83,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default ClientFooter;

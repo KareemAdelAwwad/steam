@@ -1,5 +1,5 @@
-import ClientNav from "../components/ClientNav.jsx";
-import ClientFooter from "../components/Footer.jsx";
+import ClientNav from "../components/ClientNav";
+import ClientFooter from "../components/ClientFooter";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
