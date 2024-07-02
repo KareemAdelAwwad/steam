@@ -1,93 +1,16 @@
 {
-    "f2p":[
-        {
-            "id":"wuthering-waves",
-            "name":"Wuthering Waves",
-            "image":"/public/assets/Games/Covers/wuthering-waves.jpg",
-            "price":"Free",
-            "platforms":[
-                "Windows",
-                "Android"
-            ]
-        },
-        {
-            "id":"halo-infinite",
-            "name":"Hallo Infinite",
-            "image":"/public/assets/Games/Covers/Halo Infinite.jpg",
-            "price":"Free",
-            "platforms":[
-                "Windows"
-            ]
-        },
-        {
-            "id":"destiny-2",
-            "name":"Destiny 2",
-            "image":"/public/assets/Games/Covers/destiny2.jpg",
-            "price":"Free",
-            "platforms":[
-                "Windows"
-            ]
-        },
-        {
-            "id":"apex-legends",
-            "name":"Apex Legends",
-            "image":"/public/assets/Games/Covers/APEX-Legends.jpg",
-            "price":"Free",
-            "platforms":[
-                "Windows"
-            ]
-
-        },
-        {
-            "id":"fall-guys",
-            "name":"Fall Guys",
-            "image":"/public/assets/Games/Covers/fall-guys.jpg",
-            "price":"Free",
-            "platforms":[
-                "Windows"
-            ]
-        },
-        {
-            "id":"counter-strike-2",
-            "name":"Counter Strike 2",
-            "image":"/public/assets/Games/Covers/Counter Strick 2.png",
-            "price":"Free",
-            "platforms":[
-                "Windows",
-                "Steam"
-            ]
-        },
-        {
-            "id":"sheepy",
-            "name":"Sheepy: A Short Adventure",
-            "image":"/public/assets/Games/Covers/Sheepy.jpg",
-            "price":"Free",
-            "platforms":[
-                "Windows"
-            ]
-        },
-        {
-            "id":"valorant",
-            "name":"Valorant",
-            "image":"/public/assets/Games/Covers/VALORANT.jpg",
-            "price":"Free",
-            "platforms":[
-                "Windows"
-            ]
-        }
-    ],
     "featured":[
         {
             "id":"elden-ring",
             "name":"Elden Ring",
-            "image":"/public/assets/Games/Covers/elden-ring.png",
-            "poster":"/public/assets/Games/Posters/elden-ring.jpg",
+            "image":"/assets/Games/Covers/elden-ring.png",
+            "poster":"/assets/Games/Posters/elden-ring.jpg",
             "price":"$59.99",
             "screenshots":[
-                "/public/assets/Games/Screenshots/elden-ring/1.png",
-                "/public/assets/Games/Screenshots/elden-ring/2.png",
-                "/public/assets/Games/Screenshots/elden-ring/3.png",
-                "/public/assets/Games/Screenshots/elden-ring/4.png"
+                "/assets/Games/Screenshots/elden-ring/1.png",
+                "/assets/Games/Screenshots/elden-ring/2.png",
+                "/assets/Games/Screenshots/elden-ring/3.png",
+                "/assets/Games/Screenshots/elden-ring/4.png"
             ],
             "category":[
                 "Action",
@@ -100,14 +23,14 @@
         {
             "id":"wuthering-waves",
             "name":"Wuthering Waves",
-            "image":"/public/assets/Games/Covers/wuthering-waves.jpg",
-            "poster":"/public/assets/Games/Posters/wuthering-waves.jpg",
+            "image":"/assets/Games/Covers/wuthering-waves.jpg",
+            "poster":"/assets/Games/Posters/wuthering-waves.jpg",
             "price":"Free",
             "screenshots":[
-                "/public/assets/Games/Screenshots/wuthering-waves/1.png",
-                "/public/assets/Games/Screenshots/wuthering-waves/2.png",
-                "/public/assets/Games/Screenshots/wuthering-waves/3.png",
-                "/public/assets/Games/Screenshots/wuthering-waves/4.png"
+                "/assets/Games/Screenshots/wuthering-waves/1.png",
+                "/assets/Games/Screenshots/wuthering-waves/2.png",
+                "/assets/Games/Screenshots/wuthering-waves/3.png",
+                "/assets/Games/Screenshots/wuthering-waves/4.png"
             ],
             "category":[
                 "Anime",
@@ -120,14 +43,14 @@
         {
             "id":"spiderman",
             "name":"Spiderman Miles Morales",
-            "image":"/public/assets/Games/Covers/Spiderman Miles Morales.jpg",
-            "poster":"/public/assets/Games/Posters/Spider-Man Miles Morales.jpg",
+            "image":"/assets/Games/Covers/Spiderman Miles Morales.jpg",
+            "poster":"/assets/Games/Posters/Spider-Man Miles Morales.jpg",
             "price":"$49.99",
             "screenshots":[
-                "/public/assets/Games/Screenshots/spider-man/1.jpg",
-                "/public/assets/Games/Screenshots/spider-man/2.jpg",
-                "/public/assets/Games/Screenshots/spider-man/3.jpg",
-                "/public/assets/Games/Screenshots/spider-man/4.jpg"
+                "/assets/Games/Screenshots/spider-man/1.jpg",
+                "/assets/Games/Screenshots/spider-man/2.jpg",
+                "/assets/Games/Screenshots/spider-man/3.jpg",
+                "/assets/Games/Screenshots/spider-man/4.jpg"
             ],
             "category":[
                 "Action",
@@ -140,14 +63,14 @@
         {
             "id":"halo-infinit",
             "name":"Hallo Infinite",
-            "image":"/public/assets/Games/Covers/Halo Infinite.jpg",
-            "poster":"/public/assets/Games/Posters/Halo.jpg",
+            "image":"/assets/Games/Covers/Halo Infinite.jpg",
+            "poster":"/assets/Games/Posters/Halo.jpg",
             "price":"Free",
             "screenshots":[
-                "/public/assets/Games/Screenshots/halo-infinit/1.png",
-                "/public/assets/Games/Screenshots/halo-infinit/2.png",
-                "/public/assets/Games/Screenshots/halo-infinit/3.jpg",
-                "/public/assets/Games/Screenshots/halo-infinit/4.png"
+                "/assets/Games/Screenshots/halo-infinit/1.png",
+                "/assets/Games/Screenshots/halo-infinit/2.png",
+                "/assets/Games/Screenshots/halo-infinit/3.jpg",
+                "/assets/Games/Screenshots/halo-infinit/4.png"
             ],
             "category":[
                 "Action",
@@ -158,28 +81,105 @@
             "description":"Marvel's Spider-Man: Miles Morales is a 2020 action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment."
         }
     ],
+    "f2p":[
+        {
+            "id":"wuthering-waves",
+            "name":"Wuthering Waves",
+            "image":"/assets/Games/Covers/wuthering-waves.jpg",
+            "price":"Free",
+            "platforms":[
+                "Windows",
+                "Android"
+            ]
+        },
+        {
+            "id":"halo-infinite",
+            "name":"Hallo Infinite",
+            "image":"/assets/Games/Covers/Halo Infinite.jpg",
+            "price":"Free",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"destiny-2",
+            "name":"Destiny 2",
+            "image":"/assets/Games/Covers/destiny2.jpg",
+            "price":"Free",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"apex-legends",
+            "name":"Apex Legends",
+            "image":"/assets/Games/Covers/APEX-Legends.jpg",
+            "price":"Free",
+            "platforms":[
+                "Windows"
+            ]
+
+        },
+        {
+            "id":"fall-guys",
+            "name":"Fall Guys",
+            "image":"/assets/Games/Covers/fall-guys.jpg",
+            "price":"Free",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"counter-strike-2",
+            "name":"Counter Strike 2",
+            "image":"/assets/Games/Covers/Counter Strick 2.png",
+            "price":"Free",
+            "platforms":[
+                "Windows",
+                "Steam"
+            ]
+        },
+        {
+            "id":"sheepy",
+            "name":"Sheepy: A Short Adventure",
+            "image":"/assets/Games/Covers/Sheepy.jpg",
+            "price":"Free",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"valorant",
+            "name":"Valorant",
+            "image":"/assets/Games/Covers/VALORANT.jpg",
+            "price":"Free",
+            "platforms":[
+                "Windows"
+            ]
+        }
+    ],
     "updates":[
         {
             "name":"Cyberpunk 2077",
-            "image":"/public/assets/Games/Updates/Cyberpunk.png",
+            "image":"/assets/Games/Updates/Cyberpunk.png",
             "location":"In Wishlist",
             "description":"The free Update 2.0 brings brand new ways to play Cyberpunk 2077 with the addition of a new game mode, new quests, new vehicles, and more. The update is available for all platforms and is free for all owners of the game."
         },
         {
             "name":"Starfield",
-            "image":"/public/assets/Games/Updates/Starfield.jpg",
+            "image":"/assets/Games/Updates/Starfield.jpg",
             "location":"In Library",
             "description":"A new update has been released for Starfield on all platforms that brings new content, bug fixes, and more. The update is free for all owners of the game."
         },
         {
             "name":"The Elder Scrolls® Online",
-            "image":"/public/assets/Games/Updates/The Elder Scrolls.png",
+            "image":"/assets/Games/Updates/The Elder Scrolls.png",
             "location":"In Library",
             "description":"Conquer Tamriel’s Fears and Earn Special Rewards during the Witches Festival Event The Elder Scrolls Online’s Witches Festival event is back! This spooky celebration of all things otherworldly is now live, and it’s time to earn some special rewards."
         },
         {
             "name":"Hallo Infinite",
-            "image":"/public/assets/Games/Updates/Halo-Infinite.jpg",
+            "image":"/assets/Games/Updates/Halo-Infinite.jpg",
             "location":"In Cart",
             "description":"Halo Infinite’s first season, Heroes of Reach, is now live. The season includes a new battle pass, new maps, new modes, and more. The update is free for all owners of the game."
         }
@@ -187,7 +187,7 @@
     "discount":[
         {
             "name":"American Truck Simulator",
-            "image":"/public/assets/Games/Covers/American Truck Simulator.jpg",
+            "image":"/assets/Games/Covers/American Truck Simulator.jpg",
             "price":"$19.99",
             "originalPrice":"$4.99",
             "discount":"-75%",
@@ -200,7 +200,7 @@
         },
         {
             "name":"Batman™: Arkham Knight",
-            "image":"/public/assets/Games/Covers/Batman Arkham Knight.jpg",
+            "image":"/assets/Games/Covers/Batman Arkham Knight.jpg",
             "price":"$19.99",
             "originalPrice":"$3.99",
             "discount":"-80%",
@@ -211,7 +211,7 @@
         },
         {
             "name":"Mortal Kombat 11",
-            "image":"/public/assets/Games/Covers/Mortal Kombat 11.jpg",
+            "image":"/assets/Games/Covers/Mortal Kombat 11.jpg",
             "price":"$49.99",
             "originalPrice":"$4.99",
             "discount":"-90%",
@@ -222,7 +222,7 @@
         },
         {
             "name":"A Little to the Left",
-            "image":"/public/assets/Games/Covers/A Little to the Left.jpg",
+            "image":"/assets/Games/Covers/A Little to the Left.jpg",
             "price":"$6.99",
             "originalPrice":"$4.19",
             "discount":"-40%",
@@ -234,7 +234,7 @@
         },
         {
             "name":"Stardew Valley",
-            "image":"/public/assets/Games/Covers/Stardew Valley.jpg",
+            "image":"/assets/Games/Covers/Stardew Valley.jpg",
             "price":"$5.99",
             "originalPrice":"$3.59",
             "discount":"-40%",
@@ -247,7 +247,7 @@
         },
         {
             "name":"Forza Horizon 4",
-            "image":"/public/assets/Games/Covers/Forza Horizon 4.jpg",
+            "image":"/assets/Games/Covers/Forza Horizon 4.jpg",
             "price":"$19.99",
             "originalPrice":"$3.99",
             "discount":"-80%",

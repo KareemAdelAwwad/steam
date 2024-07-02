@@ -13,14 +13,14 @@ const Footer = () => {
         <div className="items-start h-full">
           <div className="flex flex-row gap-2">
             <img
-              src="../public/valv.png"
+              src="/valv.png"
               alt="valv-logo"
               height={50}
               width={176}
               className="cursor-pointer"
             />
             <img
-              src="../public/F-Logo.png"
+              src="/F-Logo.png"
               alt="footer-logo"
               height={50}
               width={209}
