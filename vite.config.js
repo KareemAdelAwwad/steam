@@ -7,7 +7,7 @@ export default defineConfig({
     historyApiFallback: true,
   },
   plugins: [react()],
-  base: './',
+  base: '/Steam/',
   build: {
     rollupOptions: {
       output: {
