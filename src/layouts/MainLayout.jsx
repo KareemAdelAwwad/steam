@@ -1,5 +1,5 @@
-import ClientNav from "../components/ClientNav";
-import Footer from "../components/Footer";
+import ClientNav from "../components/ClientNav.jsx";
+import ClientFooter from "../components/Footer.jsx";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
@@ -7,7 +7,7 @@ const MainLayout = () => {
     <>
       <ClientNav />
       <Outlet />
-      <Footer />
+      <ClientFooter />
     </>
   );
 };
