@@ -8,11 +8,5 @@ export default defineConfig({
   },
   plugins: [react()],
   base: '/Steam/',
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
-    },
-  },
+  
 })
