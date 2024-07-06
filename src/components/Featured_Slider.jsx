@@ -1,8 +1,9 @@
 import React from "react";
+import Platform from "../utilities/Platform";
+import SliderHeader from "../utilities/SliderHeader";
 
 // Importing Icons
-import { PiWindowsLogoFill } from "react-icons/pi";
-import { IoHeart, IoHeartOutline } from "react-icons/io5";
+import { IoHeartOutline } from "react-icons/io5";
 
 // Importing the JSON file
 import GamesData from "../JSON/Games.json";
@@ -13,26 +14,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from "../utilities/SliderArrows";
 
-
-const F2P_Game_Card = () => {
+const Featured = () => {
   let games = GamesData.featured;
   let settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
   return (
     <>
-      <div className="flex justify-between mb-6 px-6 items-center">
-        <h2 className="heading-small">FEATURED</h2>
-        <button className="text-text-dim border-text-dim border-[1px] border-solid px-5 py-2 rounded-md hover:border-text-main hover:text-text-main transition-all">
-          See more
-        </button>
-      </div>
+      <SliderHeader title="Featured" />
 
       <Slider
         {...settings}
@@ -61,7 +59,9 @@ const F2P_Game_Card = () => {
               </div>
               <div className="min-w-[38%] h-50 max-sm:h-fit rounded-md pr-2 flex flex-col gap-6">
                 <div>
-                  <h3 className="heading-large max-sm:heading-medium">{game.name}</h3>
+                  <h3 className="heading-large max-sm:heading-medium">
+                    {game.name}
+                  </h3>
                   <p className="body-small text-wrap">{game.description}</p>
                 </div>
                 <screenshots className="max-sm:hidden">
@@ -88,10 +88,7 @@ const F2P_Game_Card = () => {
                       </span>
                     ))}
                   </div>
-                  <PiWindowsLogoFill
-                    size={30}
-                    className="text-text-dim inline-block hover:text-text-main cursor-pointer transition-all "
-                  />
+                  <Platform game={game} />
                 </div>
                 <navigator className="flex justify-between items-center max-sm:hidden">
                   <div>
@@ -127,4 +124,4 @@ const F2P_Game_Card = () => {
   );
 };
 
-export default F2P_Game_Card;
+export default Featured;

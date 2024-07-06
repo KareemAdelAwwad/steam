@@ -1,9 +1,6 @@
 import React from "react";
-
-// Importing Icons
-import { PiWindowsLogoFill } from "react-icons/pi";
-import { FaSteam, FaApple, FaAndroid } from "react-icons/fa6";
-
+import Platform from "../utilities/Platform";
+import SliderHeader from "../utilities/SliderHeader";
 // Importing the JSON file
 import GamesData from "../JSON/Games.json";
 
@@ -12,7 +9,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from "../utilities/SliderArrows";
-
 
 const F2P_Game_Card = () => {
   let f2pGames = GamesData.f2p;
@@ -45,35 +41,17 @@ const F2P_Game_Card = () => {
       },
     ],
   };
-  const platformIcons = {
-    Steam: <FaSteam size={26} className="text-text-dim hover:text-text-main" />,
-    Mac: <FaApple size={26} className="text-text-dim hover:text-text-main" />,
-    Android: (
-      <FaAndroid size={26} className="text-text-dim hover:text-text-main" />
-    ),
-    Windows: (
-      <PiWindowsLogoFill
-        size={26}
-        className="text-text-dim hover:text-text-main"
-      />
-    ),
-  };
   return (
     <>
-      <div className="flex justify-between mb-6 px-6 items-center">
-        <h2 className="heading-small">Free To Play</h2>
-        <button className="text-text-dim border-text-dim border-[1px] border-solid px-5 py-2 rounded-md hover:border-text-main hover:text-text-main transition-all">
-          See more
-        </button>
-      </div>
+      <SliderHeader title="Free To Play" />
 
       <Slider
         {...settings}
         className="mx-4 bg-bg-main bg-opacity-20 py-4 px-3 h-full rounded-lg mb-20"
       >
         {f2pGames.map((game, index) => (
-          <div>
-            <div key={index} className="bg-bg-main rounded-md w-fit h-fit mx-2">
+          <div key={index}>
+            <div className="bg-bg-main rounded-md w-fit h-fit mx-2">
               <div className="w-full h-full  p-4">
                 <img
                   src={game.image}
@@ -87,11 +65,7 @@ const F2P_Game_Card = () => {
                 key={game.id}
               >
                 <div className="flex flex-row justify-between w-[60%]">
-                  <div className="flex gap-1">
-                    {game.platforms.map((platform, index) => (
-                      <div key={index}>{platformIcons[platform]}</div>
-                    ))}
-                  </div>
+                  <Platform game={game} />
                   <h3 className="heading-small text-text-dim">{game.price}</h3>
                 </div>
                 <button className="heading-small  text-bg-main bg-accent-green rounded-sm px-4 max-sm:px-3 py-2">

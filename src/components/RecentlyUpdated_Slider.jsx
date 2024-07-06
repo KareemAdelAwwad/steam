@@ -1,5 +1,5 @@
 import React from "react";
-
+import SliderHeader from "../utilities/SliderHeader";
 // Importing the JSON file
 import GamesData from "../JSON/Games.json";
 
@@ -39,12 +39,7 @@ const RecentlyUpdated = () => {
   };
   return (
     <>
-      <div className="flex justify-between mb-6 px-6 items-center">
-        <h2 className="heading-small">Recently Updated</h2>
-        <button className="text-text-dim border-text-dim border-[1px] border-solid px-5 py-2 rounded-md hover:border-text-main hover:text-text-main transition-all">
-          See more
-        </button>
-      </div>
+      <SliderHeader title="Recently Updated" />
 
       <Slider
         {...settings}
@@ -66,7 +61,7 @@ const RecentlyUpdated = () => {
               <h2 className="px-4 py-2 2xl:heading-medium heading-small">
                 {game.name}
                 </h2>
-              <p className="px-4 body-small" key={index}>
+              <p className="px-4 body-small">
                 {
                     game.description.length > 75
                         ? game.description.slice(0, 75) + "..."
@@ -74,7 +69,7 @@ const RecentlyUpdated = () => {
                 }
                 </p>
               <div className="flex flex-row justify-between items-center p-4">
-                <button key={index} className="body-large  text-text-main border-bg-highlight border-solid border-[1px] rounded px-4 max-sm:px-3 py-2 hover:border-bg-hover">
+                <button className="body-large  text-text-main border-bg-highlight border-solid border-[1px] rounded px-4 max-sm:px-3 py-2 hover:border-bg-hover">
                   {game.location}
                 </button>
                 <button className="body-large  text-text-main bg-bg-highlight rounded px-4 max-sm:px-3 py-2 hover:bg-bg-hover">

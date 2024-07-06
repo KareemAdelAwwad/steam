@@ -6,6 +6,11 @@
             "image":"/assets/Games/Covers/elden-ring.png",
             "poster":"/assets/Games/Posters/elden-ring.jpg",
             "price":"$59.99",
+            "href":"/elden-ring",
+            "platforms":[
+                "Windows",
+                "Android"
+            ],
             "screenshots":[
                 "/assets/Games/Screenshots/elden-ring/1.png",
                 "/assets/Games/Screenshots/elden-ring/2.png",
@@ -26,6 +31,10 @@
             "image":"/assets/Games/Covers/wuthering-waves.jpg",
             "poster":"/assets/Games/Posters/wuthering-waves.jpg",
             "price":"Free",
+            "href":"/wuthering-waves",
+            "platforms":[
+                "Windows"
+            ],
             "screenshots":[
                 "/assets/Games/Screenshots/wuthering-waves/1.png",
                 "/assets/Games/Screenshots/wuthering-waves/2.png",
@@ -46,6 +55,10 @@
             "image":"/assets/Games/Covers/Spiderman Miles Morales.jpg",
             "poster":"/assets/Games/Posters/Spider-Man Miles Morales.jpg",
             "price":"$49.99",
+            "href":"/spiderman",
+            "platforms":[
+                "Windows"
+            ],
             "screenshots":[
                 "/assets/Games/Screenshots/spider-man/1.jpg",
                 "/assets/Games/Screenshots/spider-man/2.jpg",
@@ -66,6 +79,10 @@
             "image":"/assets/Games/Covers/Halo Infinite.jpg",
             "poster":"/assets/Games/Posters/Halo.jpg",
             "price":"Free",
+            "href":"/halo-infinite",
+            "platforms":[
+                "Windows"
+            ],
             "screenshots":[
                 "/assets/Games/Screenshots/halo-infinit/1.png",
                 "/assets/Games/Screenshots/halo-infinit/2.png",
@@ -255,6 +272,320 @@
             "platforms":[
                 "Windows"
             ]
+        }
+    ],
+    "SpecialOffers":[
+        {
+            "name":"Lies of P",
+            "image":"/assets/Games/Covers/Lies of P.jpg",
+            "price":"$35.99",
+            "originalPrice":"$21.59",
+            "discount":"-40%",
+            "end_date":"Only Today!",
+            "platforms":[
+                "Windows",
+                "Mac"
+            ]
+        },
+        {
+            "name":"Hogwarts Legacy",
+            "image":"/assets/Games/Covers/HOGWARTS LEGACY.jpg",
+            "price":"$59.99",
+            "originalPrice":"$23.99",
+            "discount":"-60%",
+            "end_date":"Dec 22",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "name":"Mortal Kombat 11",
+            "image":"/assets/Games/Covers/Mortal Kombat 11.jpg",
+            "price":"$14.99",
+            "originalPrice":"$8.99",
+            "discount":"-40%",
+            "end_date":"Towmorrow",
+            "platforms":[
+                "Windows",
+                "Mac"
+            ]
+        },
+        {
+            "name":"Unravel Two",
+            "image":"/assets/Games/Covers/Unravel Two.jpg",
+            "price":"$19.99",
+            "originalPrice":"$4.99",
+            "discount":"-40%",
+            "end_date":"Nex Week",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "name":"Red Dead Redemption 2",
+            "image":"/assets/Games/Covers/Red-Dead-Redemption-2.jpg",
+            "price":"$59.99",
+            "originalPrice":"$19.79",
+            "discount":"-67%",
+            "end_date":"Only Today!",
+            "platforms":[
+                "Windows"
+            ]
+        }
+    ],
+    "Categories":[
+        {
+            "name":"Action",
+            "image":"/assets/Games/Categories/action.jpg",
+            "href":"/action",
+            "background":"#059212"
+        },
+        {
+            "name":"Adventure",
+            "image":"/assets/Games/Categories/adventure.jpg",
+            "href":"/adventure",
+            "background": "#0C1844"
+        },
+        {
+            "name":"Anime",
+            "image":"/assets/Games/Categories/anime.jpg",
+            "href":"/anime",
+            "background": "#AF47D2"
+
+        },
+        {
+            "name":"Casual",
+            "image":"/assets/Games/Categories/casual.jpg",
+            "href":"/casual",
+            "background": "#FF8F00"
+        },
+        {
+            "name": "Horror",
+            "image": "/assets/Games/Categories/horror.jpg",
+            "href": "/horror",
+            "background": "#3572EF"
+        },
+        {
+            "name":"Co-OP",
+            "image":"/assets/Games/Categories/multiplayer_coop.jpg",
+            "href":"/coop",
+            "background": "#FF0000"
+        },
+        {
+            "name":"Puzzle",
+            "image":"/assets/Games/Categories/puzzle.jpg",
+            "href":"/puzzle",
+            "background": "#002379"
+        },
+        {
+            "name":"Racing",
+            "image":"/assets/Games/Categories/racing.jpg",
+            "href":"/racing",
+            "background": "#006769"
+        },
+        {
+            "name":"Rogue-like",
+            "image":"/assets/Games/Categories/rogue_like.jpg",
+            "href":"/rogue-like",
+            "background": "#240750"
+        },
+        {
+            "name":"Sports",
+            "image":"/assets/Games/Categories/sports.jpg",
+            "href":"/sports",
+            "background": "#FF204E"
+        },
+        {
+            "name":"Story Rich",
+            "image":"/assets/Games/Categories/story_rich.jpg",
+            "href":"/story-rich",
+            "background": "#5356FF"
+        },
+        {
+            "name":"Strategy",
+            "image":"/assets/Games/Categories/strategy.jpg",
+            "href":"/strategy",
+            "background": "#E91F64"
+        },
+        {
+            "name":"Visual Novel",
+            "image":"/assets/Games/Categories/visual_novel.jpg",
+            "href":"/visual-novel",
+            "background": "#7F9F80"
+        },
+        {
+            "name":"VR",
+            "image":"/assets/Games/Categories/vr.jpg",
+            "href":"/vr",
+            "background": "#B784B7"
+        }
+    ],
+    "Trending":[
+        {
+            "id":"devil-may-cry-5",
+            "name":"Devil May Cry 5",
+            "image":"/assets/Games/Covers/Devil May Cry 5.jpg",
+            "price":"$22.49",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"spiderman",
+            "name":"Spider-Man Remastered",
+            "image":"/assets/Games/Covers/Spider-Man.jpg",
+            "price":"$59.99",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"Monster-Hunter",
+            "name":"Monster Hunter: World",
+            "image":"/assets/Games/Covers/Monster Hunter.jpg",
+            "price":"$22.99",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"tomb-raider",
+            "name":"Rise of the Tomb Raider",
+            "image":"/assets/Games/Covers/Rise of the Tomb Raider.jpg",
+            "price":"Free",
+            "platforms":[
+                "Windows",
+                "Mac",
+                "Steam"
+            ]
+
+        }
+    ],
+    "TopSellers":[
+        {
+            "name":"Cyberpunk 2077",
+            "image":"/assets/Games/Covers/Cyberpunk 2077.png",
+            "price":"$59.99",
+            "platforms":[
+                "Windows",
+                "Mac",
+                "Steam"
+            ]
+        },
+        {
+            "id":"devil-may-cry-5",
+            "name":"Devil May Cry 5",
+            "image":"/assets/Games/Covers/Devil May Cry 5.jpg",
+            "price":"$22.49",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"spiderman",
+            "name":"Spider-Man Remastered",
+            "image":"/assets/Games/Covers/Spider-Man.jpg",
+            "price":"$59.99",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"Monster-Hunter",
+            "name":"Monster Hunter: World",
+            "image":"/assets/Games/Covers/Monster Hunter.jpg",
+            "price":"$22.99",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "id":"tomb-raider",
+            "name":"Rise of the Tomb Raider",
+            "image":"/assets/Games/Covers/Rise of the Tomb Raider.jpg",
+            "price":"$14.99",
+            "platforms":[
+                "Windows",
+                "Mac",
+                "Steam"
+            ]
+
+        },
+        {
+            "name":"Call of Duty Black OPS 6",
+            "image":"/assets/Games/Covers/Call of Duty Black OPS 6.jpg",
+            "price":"$69.99",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "name":"Lords of the Fallen",
+            "image":"/assets/Games/Covers/Lords of the Fallen.jpg",
+            "price":"$34.99",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "name":"Horizon Forbidden West™ Complete Edition",
+            "image":"/assets/Games/Covers/Horizon Forbidden.jpg",
+            "price":"$59.99",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "name":"whacking-hell",
+            "image":"/assets/Games/Covers/Monster Hunter.jpg",
+            "price":"$5.79",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "name":"Rust",
+            "image":"/assets/Games/Covers/Rust.jpg",
+            "price":"$18.99",
+            "platforms":[
+                "Windows",
+                "Mac"
+            ]
+
+        },
+        {
+            "name":"The Bloodline",
+            "image":"/assets/Games/Covers/The Bloodline.jpg",
+            "price":"$10.49",
+            "platforms":[
+                "Windows"
+            ]
+        },
+        {
+            "name":"Wildmender",
+            "image":"/assets/Games/Covers/Wildmender.jpg",
+            "price":"$24.99",
+            "platforms":[
+                "Windows"
+            ]
+        }
+    ],
+    "streaming":[
+        {
+            "title":"Cities Skylines II",
+            "image":"/assets/client-store/live-stream/1.png",
+            "views":"12K"
+        },
+        {
+            "title":"Warhammer: Vermintide II",
+            "image":"/assets/client-store/live-stream/2.png",
+            "views":"20K"
+
+        },
+        {
+            "title":"Euro Truck Simulator 2",
+            "image":"/assets/client-store/live-stream/3.png",
+            "views":"3.8K"
         }
     ]
 }

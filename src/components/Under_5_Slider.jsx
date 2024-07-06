@@ -1,10 +1,8 @@
 import React from "react";
-
-// Importing Icons
-import { PiWindowsLogoFill } from "react-icons/pi";
-import { FaSteam, FaApple } from "react-icons/fa6";
-
-import { IoHeart, IoHeartOutline } from "react-icons/io5";
+import Wishlist_Button from "../utilities/Wishlist_Button";
+import Platform from "../utilities/Platform";
+import Discount from "../utilities/Discount";
+import SliderHeader from "../utilities/SliderHeader";
 
 // Importing the JSON file
 import GamesData from "../JSON/Games.json";
@@ -43,24 +41,9 @@ const Under_5 = () => {
       },
     ],
   };
-  const platformIcons = {
-    Steam: <FaSteam size={22} className="text-text-dim hover:text-text-main" />,
-    Mac: <FaApple size={22} className="text-text-dim hover:text-text-main" />,
-    Windows: (
-      <PiWindowsLogoFill
-        size={22}
-        className="text-text-dim hover:text-text-main"
-      />
-    ),
-  };
   return (
     <>
-      <div className="flex justify-between mb-6 px-6 items-center">
-        <h2 className="heading-small">Under $5</h2>
-        <button className="text-text-dim border-text-dim border-[1px] border-solid px-5 py-2 rounded-md hover:border-text-main hover:text-text-main transition-all">
-          See more
-        </button>
-      </div>
+      <SliderHeader title="Under $5" />
 
       <Slider
         {...settings}
@@ -76,36 +59,21 @@ const Under_5 = () => {
                   className="object-cover rounded h-[220px]"
                 />
               </div>
-              <h2 className="p-4 heading-medium max-sm:heading-small">{game.name}</h2>
+              <h2 className="p-4 heading-medium max-sm:heading-small">
+                {game.name}
+              </h2>
               <div
                 className="flex flex-row justify-between items-center p-4"
                 key={index}
               >
-                <div className="flex gap-1">
-                  {game.platforms.map((platform, index) => (
-                    <div key={index}>{platformIcons[platform]}</div>
-                  
-                  ))}
-                </div>
+                <Platform game={game} size={22} />
                 <h3 className="body-medium text-text-dim max-sm:hidden sm:hidden lg:block">
-                  Untile {game.end_date}
+                  {game.end_date === "Only Today!"
+                    ? "Only Today!"
+                    : `Until ${game.end_date}`}
                 </h3>
-                <button className="heading-small  text-bg-main bg-accent-green rounded-sm px-4 max-sm:px-3 py-2 hover:bg-opacity-90">
-                  {game.discount}
-                </button>
-                <div className="heding-small">
-                  <h6 className="text-text-dim line-through">{game.price}</h6>
-                  <h6 className="text-accent-green">{game.originalPrice}</h6>
-                </div>
-                <button
-                  className="px-4 py-3 rounded bg-bg-highlight text-text-main body-large
-                    cursor-pointer hover:bg-bg-hover transition-all max-sm:hidden sm:hidden lg:block"
-                >
-                  <IoHeartOutline
-                    size={24}
-                    className="text-text-main inline-block"
-                  />
-                </button>
+                <Discount game={game}/>
+                <Wishlist_Button />
               </div>
             </div>
           </div>
