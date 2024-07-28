@@ -8,12 +8,12 @@ const StoreHeader = () => {
   const NavClases = ({ isActive }) => {
     return isActive
       ? "inline-block mx-1 my-0 rounded-md py-3 xl:px-7 px-4 bg-secondary hover:bg-[#4B619B75] transition-all"
-      : "inline-block mx-1 my-0 rounded-md py-3 xl:px-7 px-4 hover:bg-bg-hover transition-all";
+      : "inline-block mx-1 my-0 rounded-md py-3 xl:px-7 px-4 hover:bg-[#4B619B30] transition-all";
   };
 
   return (
     <>
-      <header className="flex md:hidden bg-bg-tertiary text-text-main body-medium px-2.5 py-1.5 w-full h-14 justify-between">
+      <header className="flex md:hidden bg-bg-tertiary text-text-main body-large px-2.5 py-1.5 w-full h-14 justify-between">
         <IoMenu
           size={50}
           className="text-text-main text-3xl p-2 cursor-pointer"
@@ -37,7 +37,7 @@ const StoreHeader = () => {
       </header>
 
       <header
-        className="md:flex hidden gap-0 bg-bg-tertiary text-text-main body-medium lg:px-1.5 py-7.5
+        className="md:flex hidden gap-0 bg-bg-tertiary text-text-main body-large lg:px-1.5 py-7.5
         w-full h-14 md:justify-center lg:justify-between"
       >
         <div className="flex items-center h-full w-fit">

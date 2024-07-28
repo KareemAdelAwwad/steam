@@ -13,9 +13,7 @@ const Home = () => {
   return (
     <>
       <div className="w-full steam-gradient">
-        {/* <img src={heroGIF} alt="Hero" className="w-full" /> */}
-        <video src="/public/assets/client-store/New Header.webm" autoPlay loop muted className="w-full" />
-
+        <img src={heroGIF} alt="Hero" className="w-full" />
         <section className="container 2xl:w-[1388px] mx-auto py-40 max-sm:px-4">
           <Featured />
           <SpecialOffers />

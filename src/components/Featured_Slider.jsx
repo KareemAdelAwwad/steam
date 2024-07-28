@@ -1,6 +1,7 @@
 import React from "react";
 import Platform from "../utilities/Platform";
 import SliderHeader from "../utilities/SliderHeader";
+import { Link } from "react-router-dom";
 
 // Importing Icons
 import { IoHeartOutline } from "react-icons/io5";
@@ -66,7 +67,7 @@ const Featured = () => {
                 </div>
                 <screenshots className="max-sm:hidden">
                   <div className="grid grid-cols-2 gap-4">
-                    {game.screenshots.map((screenshot, index) => (
+                    {game.screenshots.slice(0,4).map((screenshot, index) => (
                       <img
                         src={screenshot}
                         alt={game.name}
@@ -111,7 +112,9 @@ const Featured = () => {
                       className="px-8 py-3 ml-4 rounded bg-secondary text-text-main body-large
                     cursor-pointer hover:bg-bg-tertiary transition-all"
                     >
-                      {game.price === "Free" ? "Play Now" : "Buy Now"}
+                      <Link to={game.href}>
+                        {game.price === "Free" ? "Play Now" : "Buy Now"}
+                      </Link>
                     </button>
                   </div>
                 </navigator>

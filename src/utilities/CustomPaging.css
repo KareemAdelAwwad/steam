@@ -14,7 +14,7 @@
   }
   
   .slick-dots {
-    bottom: calc(-1rem - 30px); /* Adjust position if needed */
+    bottom: calc(-1rem - 20px); /* Adjust position if needed */
   }
   .slick-dots li {
     margin: 0 12px; /* Adjust spacing between dots */
@@ -31,4 +31,7 @@
     .slick-dots li {
       margin: 0 6px; /* Adjust spacing between dots */
     }
+  }
+  .slick-slide {
+    padding: 0 4px;
   }

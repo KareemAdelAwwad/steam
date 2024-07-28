@@ -1,28 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 @layer base {
-  @font-face {
-    font-family: "MotivaSans";
-    src: url(../public/font/MotivaSansRegular.woff.ttf);
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "MotivaSans";
-    src: url(../public/font/MotivaSansBold.woff.ttf);
-    font-weight: 700;
-    font-style: normal;
-  }
   * {
-    font-family: "MotivaSans", sans-serif;
+    font-family: "Tajawal", sans-serif;
   }
-  /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
-/** {
-  scrollbar-width: thin;
-  scrollbar-color: #4B619B #1E2329;
-}*/
 
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
@@ -80,27 +64,27 @@
   /* Heading */
   .heading-large {
     font-size: 26px;
-    font-weight: 700;
+    font-weight: bold;
   }
   .heading-medium {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: bold;
   }
   .heading-small {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
   }
   /* body */
   .body-large {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
   }
   .body-medium {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
   }
   .body-small {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: normal;
   }
 }
