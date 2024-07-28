@@ -2,7 +2,6 @@ import {
   Route,
   createRoutesFromElements,
   RouterProvider,
-  HashRouter,
   createBrowserRouter,
 } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
@@ -23,7 +22,7 @@ import SpidermanMM from "./pages/client-store/SingleGame/spiderman-miles-morales
 import HaloInfinite from "./pages/client-store/SingleGame/halo-infinite";
 
 
-const router = HashRouter (
+const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<MainLayout />}>
