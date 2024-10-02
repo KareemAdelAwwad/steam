@@ -1,4 +1,3 @@
-import React from "react";
 import Platform from "../utilities/Platform";
 import SliderHeader from "../utilities/SliderHeader";
 import { Link } from "react-router-dom";

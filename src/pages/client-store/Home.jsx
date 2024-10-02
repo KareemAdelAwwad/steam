@@ -1,5 +1,5 @@
 import heroGIF from "/public/assets/client-store/Header.gif";
-import Featured from "../../components/Featured_Slider";
+import Featured from "@components/Featured_Slider";
 import SpecialOffers from "../../components/SpecialOffers_Slider";
 import Categories from "../../components/Categories_Slider";
 import F2P_Game from "../../components/F2P_Game_Slider";

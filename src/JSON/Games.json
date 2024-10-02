@@ -7,7 +7,7 @@
       "poster": "/assets/Games/Posters/elden-ring.jpg",
       "price": "$59.99",
       "href": "elden-ring",
-      "platforms": ["Windows"],
+      "platforms": ["Windows", "Mac" , "Steam"],
       "reviews": {
         "pastMonth": {
           "title": "Past Month",
