@@ -167,11 +167,11 @@ const EldenRing = () => {
                   key={index}
                 >
                   <div className="flex">
-                    <div className="flex justify-between items-center w-[60%]">
+                    <div className="flex justify-between items-center w-[70%]">
                       <h2 className="heading-medium">{edition.name}</h2>
                       <Platform game={game} size={25} />
                     </div>
-                    <div className="flex justify-end items-center gap-3 w-[40%]">
+                    <div className="flex justify-end items-center gap-3 w-[30%]">
                       <Discount game={edition} />
                       <AddToCart />
                     </div>
