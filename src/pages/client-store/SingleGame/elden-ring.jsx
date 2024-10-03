@@ -56,7 +56,7 @@ const EldenRing = () => {
     <div className="w-full h-full bg-secondary m-0 py-8">
       <section className="container 2xl:w-[1567px] mx-auto max-sm:px-4 flex flex-col  gap-2.5">
         <header className="w-full h-fit p-4 bg-bg-main flex lg:flex-row flex-col
-        justify-evenly items-center rounded overflow-hidden">
+        justify-between items-center rounded overflow-hidden">
           <h2 className="text-white text-4xl heading-large ml-2">
             {game.name}
           </h2>
