@@ -1,12 +1,16 @@
 .slick-active.slick-center  {
-    border: 2px white solid;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    
+    div{
+        div {
+            
+            img {
+                border: 2px white solid;
+                overflow: hidden;
+                border-radius: 0.375rem;
+                -webkit-border-radius: 0.375rem;
+                -moz-border-radius: 0.375rem;
+                -ms-border-radius: 0.375rem;
+                -o-border-radius: 0.375rem;
+            }
+        }
+    }
 }
