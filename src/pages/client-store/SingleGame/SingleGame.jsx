@@ -2,19 +2,19 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 
 import gamesData from "@json/Games.json";
-import BTN from "@utils/btn";
+import BTN from "@components-global/btn";
 import { FaRegHeart } from "react-icons/fa6";
 
 // import react slick slider
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "../../../utilities/ActiveSlider.css"
+import "@utils/ActiveSlider.css"
 import "slick-carousel/slick/slick-theme.css";
-import { NextArrow, PrevArrow } from "@utils/SliderArrows";
-import Reviews from "@utils/Reviews";
-import Platform from "@utils/Platform";
-import Discount from "@utils/Discount";
-import AddToCart from "@utils/AddToCart";
+import { NextArrow, PrevArrow } from "@components-global/SliderArrows";
+import Reviews from "@components-global/Reviews";
+import Platform from "@components-global/Platform";
+import Discount from "@components-global/Discount";
+import AddToCart from "@components-global/AddToCart";
 
 
 // Featch data from API
@@ -176,12 +176,12 @@ const SingleGame = () => {
                   className="w-full bg-bg-main bg-opacity-50 p-4 rounded flex flex-col gap-2.5 "
                   key={index}
                 >
-                  <div className="flex">
-                    <div className="flex justify-between items-center w-[70%]">
+                  <div className="flex sm:flex-row flex-col justify-between">
+                    <div className="flex justify-between items-center lg:w-[40%] w-full">
                       <h2 className="heading-medium">{edition.name}</h2>
                       <Platform game={game} size={25} />
                     </div>
-                    <div className="flex justify-end items-center gap-3 w-[30%]">
+                    <div className="flex justify-end items-center gap-3 w-full lg:w-[30%]">
                       <Discount game={edition} />
                       <AddToCart title="Add to cart" />
                     </div>

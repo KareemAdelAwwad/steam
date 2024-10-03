@@ -1,9 +1,7 @@
 import React from "react";
-import Wishlist_Button from "@utils/Wishlist_Button";
-import Platform from "@utils/Platform";
-import Discount from "@utils/Discount";
-import SliderHeader from "@utils/SliderHeader";
-
+import Wishlist_Button from "@components-global/Wishlist_Button";
+import Platform from "@components-global/Platform";
+import SliderHeader from "@components-global/SliderHeader";
 // Importing the JSON file
 import GamesData from "@json/Games.json";
 
@@ -11,16 +9,19 @@ import GamesData from "@json/Games.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { NextArrow, PrevArrow } from "@utils/SliderArrows";
+import { NextArrow, PrevArrow } from "@components-global/SliderArrows";
 
-const SpecialOffers = () => {
-  let games = GamesData.SpecialOffers;
+const Trending = () => {
+  let games = GamesData.Trending;
   let settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -43,36 +44,31 @@ const SpecialOffers = () => {
   };
   return (
     <>
-      <SliderHeader title="Special Offers" />
+      <SliderHeader title="New & Trending" />
 
       <Slider
         {...settings}
         className="mx-4 bg-bg-main bg-opacity-20 py-4 px-3 h-full rounded-lg mb-20"
       >
         {games.map((game, index) => (
-          <div key={index}>
-            <div className="bg-bg-main rounded-md w-fit h-fit mx-2">
-              <div className="w-full p-4">
+          <div>
+            <div key={index} className="bg-bg-main rounded-md w-fit h-fit mx-2">
+              <div className="w-full h-full  p-4">
                 <img
                   src={game.image}
                   alt={game.name}
-                  className="object-cover rounded h-[200px] w-[380px]"
+                  className="object-cover rounded"
                 />
               </div>
-              <h2 className="p-4 heading-medium max-sm:heading-small">
-                {game.name}
-              </h2>
+              <h2 className="p-4 heading-medium">{game.name}</h2>
               <div
                 className="flex flex-row justify-between items-center p-4"
-                key={index}
+                key={game.id}
               >
-                <Platform game={game} />
-                <h3 className="body-medium text-text-dim max-sm:hidden sm:hidden lg:block">
-                  {game.end_date === "Only Today!"
-                    ? "Only Today!"
-                    : `Until ${game.end_date}`}
-                </h3>
-                <Discount game={game}/>
+                <div className="flex flex-row justify-between w-[83%]">
+                  <Platform game={game} />
+                  <h3 className="heading-small text-text-dim">{game.price}</h3>
+                </div>
                 <Wishlist_Button />
               </div>
             </div>
@@ -83,4 +79,4 @@ const SpecialOffers = () => {
   );
 };
 
-export default SpecialOffers;
+export default Trending;

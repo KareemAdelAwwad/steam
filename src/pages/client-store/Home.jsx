@@ -1,13 +1,13 @@
 import heroGIF from "@public/assets/client-store/Header.gif";
-import Featured from "@components/Featured_Slider";
-import SpecialOffers from "@components/SpecialOffers_Slider";
-import Categories from "@components/Categories_Slider";
-import F2P_Game from "@components/F2P_Game_Slider";
-import RecentlyUpdated from "@components/RecentlyUpdated_Slider";
-import Trending from "@components/Trending_Slider";
-import TopSellers from "@components/TopSellers_Slider";
-import Under_5 from "@components/Under_5_Slider";
-import Streaming from "@components/Streaming_Slider";
+import Featured from "@components-store/Featured_Slider";
+import SpecialOffers from "@components-store/SpecialOffers_Slider";
+import Categories from "@components-store/Categories_Slider";
+import F2P_Game from "@components-store/F2P_Game_Slider";
+import RecentlyUpdated from "@components-store/RecentlyUpdated_Slider";
+import Trending from "@components-store/Trending_Slider";
+import TopSellers from "@components-store/TopSellers_Slider";
+import Under_5 from "@components-store/Under_5_Slider";
+import Streaming from "@components-store/Streaming_Slider";
 
 const Home = () => {
   return (

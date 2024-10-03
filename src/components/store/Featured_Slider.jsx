@@ -1,6 +1,6 @@
 import React from "react";
-import Platform from "@utils/Platform";
-import SliderHeader from "@utils/SliderHeader";
+import Platform from "@components-global/Platform";
+import SliderHeader from "@components-global/SliderHeader";
 import { Link } from "react-router-dom";
 
 // Importing Icons
@@ -13,7 +13,7 @@ import GamesData from "@json/Games.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { NextArrow, PrevArrow } from "@utils/SliderArrows";
+import { NextArrow, PrevArrow } from "@components-global/SliderArrows";
 
 const Featured = () => {
   let games = GamesData.featured;
