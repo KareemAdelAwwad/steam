@@ -1,16 +1,16 @@
 import React from "react";
-import SliderHeader from "../utilities/SliderHeader";
+import SliderHeader from "@utils/SliderHeader";
 
 // Importing the JSON file
-import GamesData from "../JSON/Games.json";
+import GamesData from "@json/Games.json";
 
 // Importing the Slider library
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { NextArrow, PrevArrow } from "../utilities/SliderArrows";
-import Platform from "../utilities/Platform";
-import Wishlist_Button from "../utilities/Wishlist_Button";
+import { NextArrow, PrevArrow } from "@utils/SliderArrows";
+import Platform from "@utils/Platform";
+import Wishlist_Button from "@utils/Wishlist_Button";
 
 const TopSellers_Slider = () => {
   let games = GamesData.TopSellers;

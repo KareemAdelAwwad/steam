@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import StoreHeader from "../components/StoreHeader"
+import StoreHeader from "@components/StoreHeader"
 
 
 const StoreLayout = () => {

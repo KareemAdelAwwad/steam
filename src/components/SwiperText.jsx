@@ -1,3 +1,4 @@
+// Why ?
 import F2P_Game_Card from "./F2P_Game_Card";
 
 import React, { useRef, useState } from 'react';

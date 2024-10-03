@@ -4,22 +4,22 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import MainLayout from "./layouts/MainLayout";
-import StoreLayout from "./layouts/StoreLayout";
-import Home from "./pages/client-store/Home";
-import Browse from "./pages/client-store/Browse";
-import Discover from "./pages/client-store/Discover";
-import PointsShop from "./pages/client-store/PointsShop";
-import Wishlist from "./pages/client-store/Wishlist";
-import Cart from "./pages/client-store/Cart";
+import MainLayout from "@layouts/MainLayout";
+import StoreLayout from "@layouts/StoreLayout";
+import Home from "@pages/client-store/Home";
+import Browse from "@pages/client-store/Browse";
+import Discover from "@pages/client-store/Discover";
+import PointsShop from "@pages/client-store/PointsShop";
+import Wishlist from "@pages/client-store/Wishlist";
+import Cart from "@pages/client-store/Cart";
 
-import "./utilities/CustomPaging.css";
-import NotFound from "./utilities/NotFound";
+import "@utils/CustomPaging.css";
+import NotFound from "@utils/NotFound";
 
-import EldenRing from "./pages/client-store/SingleGame/elden-ring";
-import WuWa from "./pages/client-store/SingleGame/wuthering-waves";
-import SpidermanMM from "./pages/client-store/SingleGame/spiderman-miles-morales";
-import HaloInfinite from "./pages/client-store/SingleGame/halo-infinite";
+import EldenRing from "@pages/client-store/SingleGame/elden-ring";
+import WuWa from "@pages/client-store/SingleGame/wuthering-waves";
+import SpidermanMM from "@pages/client-store/SingleGame/spiderman-miles-morales";
+import HaloInfinite from "@pages/client-store/SingleGame/halo-infinite";
 
 
 const router = createBrowserRouter(

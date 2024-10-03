@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import gamesData from "../../../JSON/Games.json";
-import BTN from "../../../utilities/btn";
+import gamesData from "@json/Games.json";
+import BTN from "@utils/btn";
 import { FaRegHeart } from "react-icons/fa6";
 
 // import react slick slider
@@ -9,11 +9,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "../../../utilities/ActiveSlider.css"
 import "slick-carousel/slick/slick-theme.css";
-import { NextArrow, PrevArrow } from "../../../utilities/SliderArrows";
-import Reviews from "../../../utilities/Reviews";
-import Platform from "../../../utilities/Platform";
-import Discount from "../../../utilities/Discount";
-import AddToCart from "../../../utilities/AddToCart";
+import { NextArrow, PrevArrow } from "@utils/SliderArrows";
+import Reviews from "@utils/Reviews";
+import Platform from "@utils/Platform";
+import Discount from "@utils/Discount";
+import AddToCart from "@utils/AddToCart";
 
 const EldenRing = () => {
   const [nav1, setNav1] = useState(null);

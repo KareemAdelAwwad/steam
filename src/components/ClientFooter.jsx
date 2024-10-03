@@ -1,4 +1,4 @@
-import footerData from "../JSON/footer.json";
+import footerData from "@json/footer.json";
 import { FaFacebookF } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 
