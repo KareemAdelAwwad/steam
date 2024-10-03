@@ -1,12 +1,12 @@
 {
     "store": [
         { "href": "/", "label": "Home" },
-        { "href": "/Browse", "label": "Browse" },
-        { "href": "/Discover", "label": "Discover" },
-        { "href": "/Points-Shop", "label": "Points Shop" },
-        { "href": "/Curators", "label": "Curators", "notFound": true },
-        { "href": "/Gift Cards", "label": "Gift Cards", "notFound": true },
-        { "href": "/News", "label": "News", "notFound": true }
+        { "href": "store/Browse", "label": "Browse" },
+        { "href": "store/Discover", "label": "Discover" },
+        { "href": "store/Points-Shop", "label": "Points Shop" },
+        { "href": "store/Curators", "label": "Curators", "notFound": true },
+        { "href": "store/Gift Cards", "label": "Gift Cards", "notFound": true },
+        { "href": "store/News", "label": "News", "notFound": true }
     ],
     "library": [
         { "href": "/", "label": "Home" },
@@ -21,9 +21,9 @@
         { "href": "/Broadcasts", "label": "Broadcasts" }
     ],
     "navLinks": [
-        {"href": "/store", "label": "store"},
+        {"href": "/", "label": "store"},
         {"href": "/community", "label": "community"},
-        {"href": "/justoppsed", "label": "justoppsed"},
+        {"href": "/profile", "label": "profile"},
         {"href": "/library", "label": "library"},
         {"href": "/downloads", "label": "downloads"}
     ]

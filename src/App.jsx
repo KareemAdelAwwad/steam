@@ -27,13 +27,13 @@ const router = createBrowserRouter(
         <Route path="/" element={<StoreLayout />}>
           <Route index element={<Home />} />
           {/* Single Games */}
-          <Route path="/:href" element={<SingleGame />} />
+          <Route path="store/game/:href" element={<SingleGame />} />
           {/* Store Nav */}
-          <Route path="browse" element={<Browse />} />
-          <Route path="discover" element={<Discover />} />
-          <Route path="points-shop" element={<PointsShop />} />
-          <Route path="wishlist" element={<Wishlist />} />
-          <Route path="cart" element={<Cart />} />
+          <Route path="store/browse" element={<Browse />} />
+          <Route path="store/discover" element={<Discover />} />
+          <Route path="store/points-shop" element={<PointsShop />} />
+          <Route path="store/wishlist" element={<Wishlist />} />
+          <Route path="store/cart" element={<Cart />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Route>

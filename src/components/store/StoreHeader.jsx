@@ -22,12 +22,12 @@ const StoreHeader = () => {
           <div className="lg:flex md:hidden items-center h-full w-fit">
             <ul className="list-none flex-row flex">
               <li>
-                <NavLink to="/wishlist" className={NavClases}>
+                <NavLink to="store/wishlist" className={NavClases}>
                   Wishlist
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/cart" className={NavClases}>
+                <NavLink to="store/cart" className={NavClases}>
                   Cart
                 </NavLink>
               </li>
@@ -60,12 +60,12 @@ const StoreHeader = () => {
           <div className="lg:flex md:hidden items-center h-full w-fit">
             <ul className="list-none flex-row flex">
               <li>
-                <NavLink to="/wishlist" className={NavClases}>
+                <NavLink to="store/wishlist" className={NavClases}>
                   Wishlist
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/cart" className={NavClases}>
+                <NavLink to="store/cart" className={NavClases}>
                   Cart
                 </NavLink>
               </li>

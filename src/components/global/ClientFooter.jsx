@@ -4,7 +4,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const ClientFooter = () => {
   return (
-    <footer className="bg-bg-highlight w-full lg:h-[325px] h-fit flex">
+    <footer className="bg-bg-highlight w-full lg:h-[250px] h-fit flex">
       <div
         className="container 2xl:w-[1388px] mx-auto flex flex-col
         lg:flex-row justify-between items-center

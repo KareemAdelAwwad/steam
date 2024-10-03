@@ -8,7 +8,7 @@ import { FaRegHeart } from "react-icons/fa6";
 // import react slick slider
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "@utils/ActiveSlider.css"
+import "@utils/ActiveSlider.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from "@components-global/SliderArrows";
 import Reviews from "@components-global/Reviews";
@@ -16,9 +16,32 @@ import Platform from "@components-global/Platform";
 import Discount from "@components-global/Discount";
 import AddToCart from "@components-global/AddToCart";
 
-
 // Featch data from API
 // const api = 'http://store.steampowered.com/api/appdetails?appids=1245620';
+
+const Vid = ({ id, src, play }) => {
+  const vidRef = React.createRef();
+  useEffect(() => {
+    if (play) {
+      vidRef.current?.play();
+      const active = vidRef.current?.closest(".slick-active");
+      console.log({
+        play,
+        active,
+      });
+      if (!active) {
+        vidRef.current?.pause();
+      }
+    } else {
+      vidRef.current?.pause();
+    }
+  }, [play]);
+  return (
+    <video className={`video-${id}`} ref={vidRef} width="400" controls>
+      <source src={src} type="video/mp4" />
+    </video>
+  );
+};
 
 const SingleGame = () => {
   const { href } = useParams();
@@ -60,11 +83,14 @@ const SingleGame = () => {
   };
   let game = gamesData.featured.filter((game) => game.href === href)[0];
   console.log(game);
+  const [curIdx, setCurIdx] = useState(0);
   return (
-    <div className="w-full h-full bg-secondary m-0 py-8">
-      <section className="container 2xl:w-[1567px] mx-auto max-sm:px-4 flex flex-col  gap-2.5">
-        <header className="w-full h-fit p-4 bg-bg-main flex lg:flex-row flex-col gap-2
-        justify-between items-center rounded overflow-hidden">
+    <div className="w-full h-full bg-secondary m-0 py-4">
+      <section className="container 2xl:w-[1388px] mx-auto max-sm:px-4 flex flex-col  gap-2.5">
+        <header
+          className="w-full h-fit p-4 bg-bg-main flex lg:flex-row flex-col gap-2
+        justify-between items-center rounded overflow-hidden"
+        >
           <h2 className="text-white text-4xl heading-large ml-2">
             {game.name}
           </h2>
@@ -76,7 +102,7 @@ const SingleGame = () => {
             <BTN title="Ignore" outline={true} />
           </div>
         </header>
-        <section className="w-full xl:h-[680px] bg-bg-main bg-opacity-50 p-4 rounded flex lg:flex-row lg:gap-0 flex-col gap-16 justify-between">
+        <section className="w-full h-fit xl:pb-12 bg-bg-main bg-opacity-50 p-4 rounded flex lg:flex-row lg:gap-0 flex-col gap-16 justify-between">
           <div className="lg:w-[69%] w-full">
             <Slider
               asNavFor={nav2}
@@ -84,10 +110,21 @@ const SingleGame = () => {
               swipeToSlide={true}
               arrows={false}
             >
+              {game.videos ? (
+              game.videos.map((video, index) => (
+                <div
+                  key={index}
+                  className="w-full xl:h-fit rounded-md overflow-hidden flex justify-start items-start"
+                >
+                  <video  autoPlay controls muted>
+                    <source src={video} type="video/mp4" />
+                  </video>
+                </div>
+              ))) : null}
               {game.screenshots.map((screenshot, index) => (
                 <div
                   key={index}
-                  className="w-full xl:h-[485px] rounded-md overflow-hidden"
+                  className="w-full xl:h-fit rounded-md overflow-hidden"
                 >
                   <img
                     src={screenshot}
@@ -118,7 +155,11 @@ const SingleGame = () => {
             </Slider>
           </div>
           <div className="flex flex-col justify-between lg:w-[30%] w-full">
-            <img src={game.image} alt={game.name} className="w-full rounded-md" />
+            <img
+              src={game.image}
+              alt={game.name}
+              className="w-full rounded-md"
+            />
             <p className="body-medium">{game.description}</p>
             <reviews className="flex flex-col justify-between w-[80%]">
               <h6 className="body-medium text-text-dim">Reviews</h6>
@@ -183,7 +224,7 @@ const SingleGame = () => {
                     </div>
                     <div className="flex justify-end items-center gap-3 w-full lg:w-[30%]">
                       <Discount game={edition} />
-                      <AddToCart title="Add to cart" />
+                      <AddToCart title="Add to cart" price={game.price} />
                     </div>
                   </div>
                   {edition.content ? (
@@ -199,9 +240,8 @@ const SingleGame = () => {
                 </div>
               ))}
             </editions>
-            {
-              game.DLCs.length !== 0 ? (
-                <dlc className="w-full bg-bg-main bg-opacity-50 p-4 rounded flex flex-col gap-2.5">
+            {game.DLCs.length !== 0 ? (
+              <dlc className="w-full bg-bg-main bg-opacity-50 p-4 rounded flex flex-col gap-2.5">
                 <div className="flex justify-between items-center">
                   <h2 className="heading-small text-text-dim">DLCs</h2>
                   <BTN title="Browse All DLCs" outline={true} size={1} />
@@ -222,8 +262,7 @@ const SingleGame = () => {
                   <AddToCart title="Add All DLCs to Cart" />
                 </div>
               </dlc>
-              ) : null
-            }
+            ) : null}
           </colgroup>
 
           <aside className="w-full lg:w-[30%] flex flex-col gap-2.5">

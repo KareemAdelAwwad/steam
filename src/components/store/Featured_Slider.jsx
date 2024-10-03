@@ -41,7 +41,7 @@ const Featured = () => {
       >
         {games.map((game, index) => (
           <div className="px-4" key={index}>
-            <div className="flex xl:flex-row max-sm:flex-col md:flex-col gap-5">
+            <div className="flex xl:flex-row sm:flex-col max-sm:flex-col gap-5">
               {/*  Game Cover */}
               <div className="min-w-[60%] max-sm:hidden">
                 <img
@@ -77,7 +77,7 @@ const Featured = () => {
                     ))}
                   </div>
                 </screenshots>
-                <div className="flex justify-between items-center max-sm:hidden">
+                <div className="flex justify-between items-center ">
                   <div>
                     {game.category.map((category, index) => (
                       <span
@@ -91,7 +91,7 @@ const Featured = () => {
                   </div>
                   <Platform game={game} />
                 </div>
-                <navigator className="flex justify-between items-center max-sm:hidden">
+                <navigator className="flex justify-between items-center ">
                   <div>
                     <button
                       className="px-8 py-3 rounded bg-bg-highlight text-text-main body-large
@@ -112,7 +112,7 @@ const Featured = () => {
                       className="px-8 py-3 ml-4 rounded bg-secondary text-text-main body-large
                     cursor-pointer hover:bg-bg-tertiary transition-all"
                     >
-                      <Link to={game.href}>
+                      <Link to={`store/game/${game.href}`}>
                         {game.price === "Free" ? "Play Now" : "Buy Now"}
                       </Link>
                     </button>

@@ -156,7 +156,7 @@
       "name": "Wuthering Waves",
       "image": "/assets/Games/Covers/wuthering-waves.jpg",
       "poster": "/assets/Games/Posters/wuthering-waves.jpg",
-      "price": "Free",
+      "price": "",
       "href": "wuthering-waves",
       "platforms": ["Windows"],
       "reviews": {
@@ -218,11 +218,19 @@
           }
         }
       },
+      "videos":[
+        "/assets/Games/Screenshots/wuthering-waves/V1.mp4"
+      ],
       "screenshots": [
+        "/assets/Games/Screenshots/wuthering-waves/0.png",
         "/assets/Games/Screenshots/wuthering-waves/1.png",
         "/assets/Games/Screenshots/wuthering-waves/2.png",
         "/assets/Games/Screenshots/wuthering-waves/3.png",
-        "/assets/Games/Screenshots/wuthering-waves/4.png"
+        "/assets/Games/Screenshots/wuthering-waves/4.png",
+        "/assets/Games/Screenshots/wuthering-waves/5.png",
+        "/assets/Games/Screenshots/wuthering-waves/6.png",
+        "/assets/Games/Screenshots/wuthering-waves/7.png",
+        "/assets/Games/Screenshots/wuthering-waves/8.png"
       ],
       "category": ["Anime", "Action", "RPG", "Open World"],
       "description": "Wuthering Waves is a free-to-play game blending action RPG elements with anime aesthetics in an expansive open world, featuring a rich storyline and combat system."

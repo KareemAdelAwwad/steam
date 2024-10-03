@@ -44,18 +44,19 @@
   .steam-gradient {
     @apply bg-gradient-to-b;
     background: linear-gradient(to bottom, #040011 0%, #202B3C 40%);
+  }
 
-    .social-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      padding: 10px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-  }}
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
 
 @layer utilities {
   /* Heading */
