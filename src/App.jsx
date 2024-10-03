@@ -16,10 +16,8 @@ import Cart from "@pages/client-store/Cart";
 import "@utils/CustomPaging.css";
 import NotFound from "@utils/NotFound";
 
-import EldenRing from "@pages/client-store/SingleGame/elden-ring";
-import WuWa from "@pages/client-store/SingleGame/wuthering-waves";
-import SpidermanMM from "@pages/client-store/SingleGame/spiderman-miles-morales";
-import HaloInfinite from "@pages/client-store/SingleGame/halo-infinite";
+import SingleGame from "@pages/client-store/SingleGame/SingleGame";
+
 
 
 const router = createBrowserRouter(
@@ -29,10 +27,7 @@ const router = createBrowserRouter(
         <Route path="/" element={<StoreLayout />}>
           <Route index element={<Home />} />
           {/* Single Games */}
-          <Route path="elden-ring" element={<EldenRing />} />
-          <Route path="wuthering-waves" element={<WuWa />} />
-          <Route path="spiderman-miles-morales" element={<SpidermanMM />} />
-          <Route path="halo-infinite" element={<HaloInfinite />} />
+          <Route path="/:href" element={<SingleGame />} />
           {/* Store Nav */}
           <Route path="browse" element={<Browse />} />
           <Route path="discover" element={<Discover />} />

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useParams } from "react-router-dom";
 
 import gamesData from "@json/Games.json";
 import BTN from "@utils/btn";
@@ -15,7 +16,13 @@ import Platform from "@utils/Platform";
 import Discount from "@utils/Discount";
 import AddToCart from "@utils/AddToCart";
 
-const EldenRing = () => {
+
+// Featch data from API
+// const api = 'http://store.steampowered.com/api/appdetails?appids=1245620';
+
+const SingleGame = () => {
+  const { href } = useParams();
+  console.log(href);
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
   let sliderRef1 = useRef(null);
@@ -51,11 +58,12 @@ const EldenRing = () => {
       },
     ],
   };
-  let game = gamesData.featured[0];
+  let game = gamesData.featured.filter((game) => game.href === href)[0];
+  console.log(game);
   return (
     <div className="w-full h-full bg-secondary m-0 py-8">
       <section className="container 2xl:w-[1567px] mx-auto max-sm:px-4 flex flex-col  gap-2.5">
-        <header className="w-full h-fit p-4 bg-bg-main flex lg:flex-row flex-col
+        <header className="w-full h-fit p-4 bg-bg-main flex lg:flex-row flex-col gap-2
         justify-between items-center rounded overflow-hidden">
           <h2 className="text-white text-4xl heading-large ml-2">
             {game.name}
@@ -96,10 +104,10 @@ const EldenRing = () => {
               ref={(slider) => (sliderRef2 = slider)}
               swipeToSlide={true}
               focusOnSelect={true}
-              className="mt-3 mx-6 "
+              className="mt-2 mx-6"
             >
               {game.screenshots.map((screenshot, index) => (
-                <div key={index} className="h-28 rounded-md overflow-hidden">
+                <div key={index} className="h-30 rounded-md overflow-hidden">
                   <img
                     src={screenshot}
                     alt="screenshot"
@@ -110,7 +118,7 @@ const EldenRing = () => {
             </Slider>
           </div>
           <div className="flex flex-col justify-between lg:w-[30%] w-full">
-            <img src={game.image} alt={game.name} className="w-full" />
+            <img src={game.image} alt={game.name} className="w-full rounded-md" />
             <p className="body-medium">{game.description}</p>
             <reviews className="flex flex-col justify-between w-[80%]">
               <h6 className="body-medium text-text-dim">Reviews</h6>
@@ -191,27 +199,31 @@ const EldenRing = () => {
                 </div>
               ))}
             </editions>
-            <dlc className="w-full bg-bg-main bg-opacity-50 p-4 rounded flex flex-col gap-2.5">
-              <div className="flex justify-between items-center">
-                <h2 className="heading-small text-text-dim">DLCs</h2>
-                <BTN title="Browse All DLCs" outline={true} size={1} />
-              </div>
-              <div className="flex flex-col gap-2">
-                {game.DLCs.map((dlc, index) => (
-                  <div
-                    className="bg-[#1E2329] bg-opacity-40 rounded w-full px-4 py-2 flex justify-between items-center"
-                    key={index}
-                  >
-                    <h6 className="body-medium text-text-dim">{dlc.name}</h6>
-                    <Discount game={dlc} />
-                  </div>
-                ))}
-              </div>
-              <div className="w-full flex justify-end gap-4">
-                <Discount game={game.dlcsPrice} />
-                <AddToCart title="Add All DLCs to Cart" />
-              </div>
-            </dlc>
+            {
+              game.DLCs.length !== 0 ? (
+                <dlc className="w-full bg-bg-main bg-opacity-50 p-4 rounded flex flex-col gap-2.5">
+                <div className="flex justify-between items-center">
+                  <h2 className="heading-small text-text-dim">DLCs</h2>
+                  <BTN title="Browse All DLCs" outline={true} size={1} />
+                </div>
+                <div className="flex flex-col gap-2">
+                  {game.DLCs.map((dlc, index) => (
+                    <div
+                      className="bg-[#1E2329] bg-opacity-40 rounded w-full px-4 py-2 flex justify-between items-center"
+                      key={index}
+                    >
+                      <h6 className="body-medium text-text-dim">{dlc.name}</h6>
+                      <Discount game={dlc} />
+                    </div>
+                  ))}
+                </div>
+                <div className="w-full flex justify-end gap-4">
+                  <Discount game={game.dlcsPrice} />
+                  <AddToCart title="Add All DLCs to Cart" />
+                </div>
+              </dlc>
+              ) : null
+            }
           </colgroup>
 
           <aside className="w-full lg:w-[30%] flex flex-col gap-2.5">
@@ -224,4 +236,4 @@ const EldenRing = () => {
   );
 };
 
-export default EldenRing;
+export default SingleGame;

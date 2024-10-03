@@ -9,7 +9,7 @@ const Reviews = ({ game }) => {
         <div className="flex flex-row justify-between">
           <div className="flex flex-row-reverse gap-1 items-center">
             <BiSolidLike className="text-primary" />
-            <h4 className="body-small text-primary">{game.postive}</h4>
+            <h4 className="body-small text-primary">{game.positive}</h4>
           </div>
           <div className="flex flex-row-reverse gap-1 items-center">
             <BiSolidDislike className="text-accent-red" />
@@ -20,7 +20,7 @@ const Reviews = ({ game }) => {
         </div>
         <div className="h-1 w-full flex gap-1">
           <div
-            style={{ width: game.postive }}
+            style={{ width: game.positive }}
             className="h-full bg-primary rounded-full"
           ></div>
           <div

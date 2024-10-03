@@ -1,7 +1,7 @@
 {
   "featured": [
     {
-      "id": "EldenRing",
+      "id": 1245620,
       "name": "Elden Ring",
       "image": "/assets/Games/Covers/elden-ring.png",
       "poster": "/assets/Games/Posters/elden-ring.jpg",
@@ -12,13 +12,13 @@
         "pastMonth": {
           "title": "Past Month",
           "total": "1.2K",
-          "postive": "90%",
+          "positive": "90%",
           "negative": "10%"
         },
         "allTime": {
           "title": "All Time",
           "total": "12.5K",
-          "postive": "95%",
+          "positive": "95%",
           "negative": "5%"
         }
       },
@@ -100,6 +100,42 @@
             "Storage": "60 GB available space",
             "Sound Card": "DirectX 11 sound device"
           }
+        },
+        "Mac": {
+          "minimum": {
+            "OS": "macOS 10.15",
+            "Processor": "Intel Core i5-2500K / AMD FX-6300",
+            "Memory": "8 GB RAM",
+            "Graphics": "NVIDIA GeForce GTX 770 / AMD Radeon R9 280X",
+            "Storage": "60 GB available space"
+          },
+          "recommended": {
+            "OS": "macOS 10.15",
+            "Processor": "Intel Core i7-4770K / AMD Ryzen 5 1500X",
+            "Memory": "16 GB RAM",
+            "Graphics": "NVIDIA GeForce GTX 1060 / AMD Radeon RX 480",
+            "Storage": "60 GB available space"
+          }
+        },
+        "Steam": {
+          "minimum": {
+            "OS": "Windows 10",
+            "Processor": "Intel Core i5-2500K / AMD FX-6300",
+            "Memory": "8 GB RAM",
+            "Graphics": "NVIDIA GeForce GTX 770 / AMD Radeon R9 280X",
+            "DirectX": "Version 11",
+            "Storage": "60 GB available space",
+            "Sound Card": "DirectX 11 sound device"
+          },
+          "recommended": {
+            "OS": "Windows 10/11",
+            "Processor": "Intel Core i7-4770K / AMD Ryzen 5 1500X",
+            "Memory": "16 GB RAM",
+            "Graphics": "NVIDIA GeForce GTX 1060 / AMD Radeon RX 480",
+            "DirectX": "Version 12",
+            "Storage": "60 GB available space",
+            "Sound Card": "DirectX 11 sound device"
+          }
         }
       },
       "screenshots": [
@@ -121,8 +157,67 @@
       "image": "/assets/Games/Covers/wuthering-waves.jpg",
       "poster": "/assets/Games/Posters/wuthering-waves.jpg",
       "price": "Free",
-      "href": "/wuthering-waves",
+      "href": "wuthering-waves",
       "platforms": ["Windows"],
+      "reviews": {
+        "pastMonth": {
+          "title": "Past Month",
+          "total": "1.8K",
+          "positive": "89%",
+          "negative": "11%"
+        },
+        "allTime": {
+          "title": "All Time",
+          "total": "15K",
+          "positive": "91%",
+          "negative": "9%"
+        }
+      },
+      "releaseDate": "TBA",
+      "developer": "Kuro Game",
+      "publisher": "Kuro Game",
+      "features": [
+        "Single-player",
+        "Full controller support",
+        "Steam Cloud"
+      ],
+      "languages": {
+        "interface": "English, Japanese, Simplified Chinese, Korean",
+        "subtitles": "English, Japanese, Simplified Chinese, Korean",
+        "audio": "English, Japanese, Chinese, Korean"
+      },
+      "Editions": [
+        {
+          "name": "Standard Edition",
+          "price": "Free"
+        }
+      ],
+      "DLCs": [],
+      "dlcsPrice": {
+        "price": "$0",
+        "newPrice": "$0",
+        "discount": "0%"
+      },
+      "systemRequirements": {
+        "Windows": {
+          "minimum": {
+            "OS": "Windows 10",
+            "Processor": "Intel Core i5-4590 / AMD Ryzen 5 1600",
+            "Memory": "8 GB RAM",
+            "Graphics": "NVIDIA GTX 1050 Ti / AMD RX 560",
+            "DirectX": "Version 11",
+            "Storage": "40 GB available space"
+          },
+          "recommended": {
+            "OS": "Windows 10/11",
+            "Processor": "Intel Core i7-7700 / AMD Ryzen 7 2700",
+            "Memory": "16 GB RAM",
+            "Graphics": "NVIDIA GTX 1660 / AMD RX 590",
+            "DirectX": "Version 12",
+            "Storage": "40 GB available space"
+          }
+        }
+      },
       "screenshots": [
         "/assets/Games/Screenshots/wuthering-waves/1.png",
         "/assets/Games/Screenshots/wuthering-waves/2.png",
@@ -130,7 +225,7 @@
         "/assets/Games/Screenshots/wuthering-waves/4.png"
       ],
       "category": ["Anime", "Action", "RPG", "Open World"],
-      "description": "Wuthering Waves is a free-to-play game that is a mix of a visual novel and a dating simulator. The game is set in a fictional world where you play as a young"
+      "description": "Wuthering Waves is a free-to-play game blending action RPG elements with anime aesthetics in an expansive open world, featuring a rich storyline and combat system."
     },
     {
       "id": "SpidermanMM",
@@ -138,8 +233,75 @@
       "image": "/assets/Games/Covers/Spiderman Miles Morales.jpg",
       "poster": "/assets/Games/Posters/Spider-Man Miles Morales.jpg",
       "price": "$49.99",
-      "href": "/spiderman-miles-morales",
+      "href": "spiderman-miles-morales",
       "platforms": ["Windows"],
+      "reviews": {
+        "pastMonth": {
+          "title": "Past Month",
+          "total": "2K",
+          "positive": "94%",
+          "negative": "6%"
+        },
+        "allTime": {
+          "title": "All Time",
+          "total": "25K",
+          "positive": "92%",
+          "negative": "8%"
+        }
+      },
+      "releaseDate": "Nov 12, 2020",
+      "developer": "Insomniac Games",
+      "publisher": "Sony Interactive Entertainment",
+      "features": [
+        "Single-player",
+        "Full controller support",
+        "Steam Achievements"
+      ],
+      "languages": {
+        "interface": "English, French, German, Spanish - Spain, Japanese",
+        "subtitles": "English, French, German, Spanish - Spain, Japanese",
+        "audio": "English, Japanese"
+      },
+      "Editions": [
+        {
+          "name": "Standard Edition",
+          "price": "$49.99"
+        },
+        {
+          "name": "Ultimate Edition",
+          "price": "$69.99",
+          "content": [
+            "Spider-Man: Miles Morales",
+            "Marvel's Spider-Man Remastered"
+          ]
+        }
+      ],
+      "DLCs": [],
+      "dlcsPrice": {
+        "price": "$0",
+        "newPrice": "$0",
+        "discount": "0%"
+      },
+      "systemRequirements": {
+        "Windows": {
+          "minimum": {
+            "OS": "Windows 10",
+            "Processor": "Intel Core i5-3470 / AMD Ryzen 5 1400",
+            "Memory": "8 GB RAM",
+            "Graphics": "NVIDIA GeForce GTX 950 / AMD Radeon RX 470",
+            "DirectX": "Version 11",
+            "Storage": "75 GB available space"
+          },
+          "recommended": {
+            "OS": "Windows 10/11",
+            "Processor": "Intel Core i7-4770 / AMD Ryzen 5 1600",
+            "Memory": "16 GB RAM",
+            "Graphics": "NVIDIA GeForce GTX 1060 / AMD Radeon RX 580",
+            "DirectX": "Version 12",
+            "Storage": "75 GB available space"
+          }
+        }
+      },
       "screenshots": [
         "/assets/Games/Screenshots/spider-man/1.jpg",
         "/assets/Games/Screenshots/spider-man/2.jpg",
@@ -151,21 +313,92 @@
     },
     {
       "id": "HaloInfinite",
-      "name": "Hallo Infinite",
+      "name": "Halo Infinite",
       "image": "/assets/Games/Covers/Halo Infinite.jpg",
       "poster": "/assets/Games/Posters/Halo.jpg",
       "price": "Free",
-      "href": "/halo-infinite",
+      "href": "halo-infinite",
       "platforms": ["Windows"],
+      "reviews": {
+        "pastMonth": {
+          "title": "Past Month",
+          "total": "3.5K",
+          "positive": "88%",
+          "negative": "12%"
+        },
+        "allTime": {
+          "title": "All Time",
+          "total": "50K",
+          "positive": "85%",
+          "negative": "15%"
+        }
+      },
+      "releaseDate": "Dec 8, 2021",
+      "developer": "343 Industries",
+      "publisher": "Xbox Game Studios",
+      "features": [
+        "Single-player",
+        "Multiplayer",
+        "Co-op",
+        "Full controller support",
+        "Steam Achievements",
+        "Steam Cloud"
+      ],
+      "languages": {
+        "interface": "English, French, German, Spanish - Latin America, Italian, Japanese",
+        "subtitles": "English, French, German, Spanish - Latin America, Italian, Japanese",
+        "audio": "English"
+      },
+      "Editions": [
+        {
+          "name": "Standard Edition",
+          "price": "Free"
+        },
+        {
+          "name": "Campaign Edition",
+          "price": "$69.99",
+          "content": [
+            "Halo Infinite",
+            "Campaign Expansion"
+          ]
+        }
+      ],
+      "DLCs": [],
+      "dlcsPrice": {
+        "price": "$0",
+        "newPrice": "$0",
+        "discount": "0%"
+      },
+      "systemRequirements": {
+        "Windows": {
+          "minimum": {
+            "OS": "Windows 10",
+            "Processor": "AMD Ryzen 5 1600 / Intel i5-4440",
+            "Memory": "8 GB RAM",
+            "Graphics": "AMD RX 570 / NVIDIA GTX 1050 Ti",
+            "DirectX": "Version 12",
+            "Storage": "50 GB available space"
+          },
+          "recommended": {
+            "OS": "Windows 10/11",
+            "Processor": "AMD Ryzen 7 3700X / Intel i7-9700k",
+            "Memory": "16 GB RAM",
+            "Graphics": "AMD RX 5700 XT / NVIDIA RTX 2070",
+            "DirectX": "Version 12",
+            "Storage": "50 GB available space"
+          }
+        }
+      },
       "screenshots": [
-        "/assets/Games/Screenshots/halo-infinit/1.png",
-        "/assets/Games/Screenshots/halo-infinit/2.png",
-        "/assets/Games/Screenshots/halo-infinit/3.jpg",
-        "/assets/Games/Screenshots/halo-infinit/4.png"
+        "/assets/Games/Screenshots/halo-infinite/1.png",
+        "/assets/Games/Screenshots/halo-infinite/2.png",
+        "/assets/Games/Screenshots/halo-infinite/3.jpg",
+        "/assets/Games/Screenshots/halo-infinite/4.png"
       ],
       "category": ["Action", "Shooter", "Open World", "Sci-Fi"],
-      "description": "Marvel's Spider-Man: Miles Morales is a 2020 action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment."
+      "description": "Halo Infinite is the latest installment in the legendary Halo series, offering a massive single-player campaign and free-to-play multiplayer."
     }
+    
   ],
   "f2p": [
     {
