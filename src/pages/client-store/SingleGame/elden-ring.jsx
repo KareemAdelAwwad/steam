@@ -7,6 +7,7 @@ import { FaRegHeart } from "react-icons/fa6";
 // import react slick slider
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import "../../../utilities/ActiveSlider.css"
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from "@utils/SliderArrows";
 import Reviews from "@utils/Reviews";
@@ -53,12 +54,13 @@ const EldenRing = () => {
   let game = gamesData.featured[0];
   return (
     <div className="w-full h-full bg-secondary m-0 py-8">
-      <section className="container 2xl:w-[1567px] mx-auto max-sm:px-4 flex flex-col gap-2.5">
-        <header className="w-full h-fit p-4 bg-bg-main flex justify-between items-center rounded">
+      <section className="container 2xl:w-[1567px] mx-auto max-sm:px-4 flex flex-col  gap-2.5">
+        <header className="w-full h-fit p-4 bg-bg-main flex lg:flex-row flex-col
+        justify-evenly items-center rounded overflow-hidden">
           <h2 className="text-white text-4xl heading-large ml-2">
             {game.name}
           </h2>
-          <div className="flex flex-row-reverse gap-2">
+          <div className="flex flex-row-reverse flex-wrap gap-2">
             <BTN title="Community Hub" />
             <BTN title="Browse All DLCs" />
             <BTN title="Wishlist" hasIcon={true} Icon={FaRegHeart} />
@@ -66,8 +68,8 @@ const EldenRing = () => {
             <BTN title="Ignore" outline={true} />
           </div>
         </header>
-        <section className="w-full h-[680px] bg-bg-main bg-opacity-50 p-4 rounded flex felx-row justify-between">
-          <div className="w-[69%]">
+        <section className="w-full xl:h-[680px] bg-bg-main bg-opacity-50 p-4 rounded flex lg:flex-row lg:gap-0 flex-col gap-16 justify-between">
+          <div className="lg:w-[69%] w-full">
             <Slider
               asNavFor={nav2}
               ref={(slider) => (sliderRef1 = slider)}
@@ -77,7 +79,7 @@ const EldenRing = () => {
               {game.screenshots.map((screenshot, index) => (
                 <div
                   key={index}
-                  className="w-full h-[485px] rounded-md overflow-hidden"
+                  className="w-full xl:h-[485px] rounded-md overflow-hidden"
                 >
                   <img
                     src={screenshot}
@@ -107,7 +109,7 @@ const EldenRing = () => {
               ))}
             </Slider>
           </div>
-          <div className="flex flex-col justify-between w-[30%]">
+          <div className="flex flex-col justify-between lg:w-[30%] w-full">
             <img src={game.image} alt={game.name} className="w-full" />
             <p className="body-medium">{game.description}</p>
             <reviews className="flex flex-col justify-between w-[80%]">
@@ -143,7 +145,7 @@ const EldenRing = () => {
             </info>
             <tags className="flex gap-2 flex-col">
               <h6 className="body-medium text-text-dim">Popular Tags</h6>
-              <div className="flex gap-1">
+              <div className="flex gap-1 flex-wrap">
                 {game.category.map((tag, index) => (
                   <span
                     className="text-text-dim bg-bg-highlight px-3 py-1.5 rounded hover:cursor-pointer
@@ -158,22 +160,31 @@ const EldenRing = () => {
           </div>
         </section>
 
-        <section className="w-full rounded flex flex-row gap-2.5">
-          <colgroup className="w-[70%] flex flex-col gap-2.5">
+        <section className="w-full rounded flex lg:flex-row flex-col gap-2.5">
+          <colgroup className="lg:w-[70%] w-full flex flex-col gap-2.5">
             <editions className="w-full flex flex-col gap-2.5">
               {game.Editions.map((edition, index) => (
                 <div
-                  className="w-full bg-bg-main bg-opacity-50 p-4 rounded flex flex-col gap-2.5"
+                  className="w-full bg-bg-main bg-opacity-50 p-4 rounded flex flex-col gap-2.5 "
                   key={index}
                 >
+<<<<<<< HEAD
                   <div className="flex">
-                    <div className="flex justify-between items-center w-[60%]">
+                    <div className="flex justify-between items-center w-[70%]">
                       <h2 className="heading-medium">{edition.name}</h2>
                       <Platform game={game} size={25} />
                     </div>
-                    <div className="flex justify-end items-center gap-3 w-[40%]">
+                    <div className="flex justify-end items-center gap-3 w-[30%]">
+=======
+                  <div className="flex sm:flex-row flex-col justify-between">
+                    <div className="flex justify-between items-center lg:w-[40%] w-full">
+                      <h2 className="heading-medium">{edition.name}</h2>
+                      <Platform game={game} size={25} />
+                    </div>
+                    <div className="flex justify-end items-center gap-3 w-full lg:w-[30%]">
+>>>>>>> ad8c524b070e5f544d2858d2c4d755b6d7ead570
                       <Discount game={edition} />
-                      <AddToCart />
+                      <AddToCart title="Add to cart" />
                     </div>
                   </div>
                   {edition.content ? (
@@ -212,7 +223,7 @@ const EldenRing = () => {
             </dlc>
           </colgroup>
 
-          <aside className="w-[30%] flex flex-col gap-2.5">
+          <aside className="w-full lg:w-[30%] flex flex-col gap-2.5">
             <div className="bg-bg-main p-4 rounded"></div>
             <div className="bg-bg-main p-4 rounded"></div>
           </aside>

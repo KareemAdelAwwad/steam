@@ -9,9 +9,9 @@ const Btn = ({
 }) => {
   let BTNclass;
   if (outline) {
-    BTNclass = (`bg-transparent border-solid border-[1px] border-text-dim opacity-20 body-medium px-${3*size} py-${2*size} rounded hover:opacity-80 transition-all`);
+    BTNclass = (`bg-transparent max-sm:w-full border-solid border-[1px] border-text-dim opacity-20 body-medium px-${3*size} py-${2*size} rounded hover:opacity-80 transition-all`);
   } else {
-    BTNclass = (`bg-bg-highlight body-medium px-${3*size} py-${2*size} rounded hover:bg-bg-hover transition-all`);
+    BTNclass = (`bg-bg-highlight max-sm:w-full body-medium px-${3*size} py-${2*size} rounded hover:bg-bg-hover transition-all`);
   }
   return (
     <button className={BTNclass}>
