@@ -19,6 +19,12 @@
         { "href": "/Workshop", "label": "Workshop" },
         { "href": "/Market", "label": "Market" },
         { "href": "/Broadcasts", "label": "Broadcasts" }
+    ],
+    "navLinks": [
+        {"href": "/store", "label": "store"},
+        {"href": "/community", "label": "community"},
+        {"href": "/justoppsed", "label": "justoppsed"},
+        {"href": "/library", "label": "library"},
+        {"href": "/downloads", "label": "downloads"}
     ]
 }
-  

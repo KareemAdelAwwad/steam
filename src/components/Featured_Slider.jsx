@@ -1,19 +1,19 @@
 import React from "react";
-import Platform from "../utilities/Platform";
-import SliderHeader from "../utilities/SliderHeader";
+import Platform from "@utils/Platform";
+import SliderHeader from "@utils/SliderHeader";
 import { Link } from "react-router-dom";
 
 // Importing Icons
 import { IoHeartOutline } from "react-icons/io5";
 
 // Importing the JSON file
-import GamesData from "../JSON/Games.json";
+import GamesData from "@json/Games.json";
 
 // Importing the Slider library
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { NextArrow, PrevArrow } from "../utilities/SliderArrows";
+import { NextArrow, PrevArrow } from "@utils/SliderArrows";
 
 const Featured = () => {
   let games = GamesData.featured;

@@ -1,4 +1,4 @@
-import headerData from "../JSON/header.json";
+import headerData from "@json/header.json";
 import SearchBar from "./SearchBar";
 import { NavLink } from "react-router-dom";
 import { IoMenu, IoSettingsSharp } from "react-icons/io5";

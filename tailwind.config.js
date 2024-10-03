@@ -43,7 +43,7 @@ export default {
         highlight: "#1E2329",
         hover: "#313843",
         secondary: "#14344B",
-        tertiary: "#212B45",
+        tertiary: "#212B45"
       },
       accent: {
         green: "#A1CD44",
@@ -53,6 +53,9 @@ export default {
     },
     fontFamily: {
       MotivaSans: ["Motiva Sans", "sans-serif"],
+    },
+    clientNavigation: {
+      text: 'uppercase'
     },
     extend: {},
   },

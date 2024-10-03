@@ -1,18 +1,18 @@
 import React from "react";
-import SliderHeader from "../utilities/SliderHeader";
+import SliderHeader from "@utils/SliderHeader";
 
 // Importing the icons
 import { FaPlay, FaEye } from "react-icons/fa";
 import { PiRecordFill } from "react-icons/pi";
 
 // Importing the JSON file
-import GamesData from "../JSON/Games.json";
+import GamesData from "@json/Games.json";
 
 // Importing the Slider library
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { NextArrow, PrevArrow } from "../utilities/SliderArrows";
+import { NextArrow, PrevArrow } from "@utils/SliderArrows";
 
 const Streaming = () => {
   let games = GamesData.streaming;

@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SliderHeader from "../utilities/SliderHeader";
+import SliderHeader from "@utils/SliderHeader";
 
 // Importing the JSON file
-import GamesData from "../JSON/Games.json";
+import GamesData from "@json/Games.json";
 
 // Importing the Slider library
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { NextArrow, PrevArrow } from "../utilities/SliderArrows";
+import { NextArrow, PrevArrow } from "@utils/SliderArrows";
 
 const Categories = () => {
   let games = GamesData.Categories;
