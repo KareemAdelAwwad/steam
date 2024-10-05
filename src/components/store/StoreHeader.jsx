@@ -13,6 +13,7 @@ const StoreHeader = () => {
 
   return (
     <>
+      {/* Mobile Header */}
       <header className="flex md:hidden bg-bg-tertiary text-text-main body-large px-2.5 py-1.5 w-full h-14 justify-between">
         <IoMenu
           size={50}
@@ -35,7 +36,8 @@ const StoreHeader = () => {
           </div>
         </div>
       </header>
-
+      
+      {/* Desktop Header */} 
       <header
         className="md:flex hidden gap-0 bg-bg-tertiary text-text-main body-large lg:px-1.5 py-7.5
         w-full h-14 md:justify-center lg:justify-between"

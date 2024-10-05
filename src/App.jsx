@@ -18,8 +18,6 @@ import NotFound from "@utils/NotFound";
 
 import SingleGame from "@pages/client-store/SingleGame/SingleGame";
 
-
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -35,8 +33,8 @@ const router = createBrowserRouter(
           <Route path="store/wishlist" element={<Wishlist />} />
           <Route path="store/cart" element={<Cart />} />
         </Route>
-        <Route path="*" element={<NotFound />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </>
   )
 );

@@ -33,7 +33,7 @@ const NotFound = () => {
           </div>
           <div class="error__nav e-nav">
             <a
-              href="./"
+              href="../"
               class="e-nav__link"
             ></a>
           </div>

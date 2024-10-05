@@ -36,11 +36,10 @@ const Featured = () => {
       <Slider
         {...settings}
         className="mx-4 bg-bg-main py-4 h-full mb-20 rounded-lg transition-all
-        xl:pb-0 2xl:py-4
-        "
+        xl:pb-0 2xl:py-4"
       >
         {games.map((game, index) => (
-          <div className="px-4" key={index}>
+          <div className="px-4" key={index} >
             <div className="flex xl:flex-row sm:flex-col max-sm:flex-col gap-5">
               {/*  Game Cover */}
               <div className="min-w-[60%] max-sm:hidden">

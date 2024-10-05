@@ -37,7 +37,7 @@ const ClientNav = () => {
   };
 
     return (
-    <nav className="bg-[#0E141B] h-[59px] px-[20px] flex justify-between items-center">
+    <nav className="bg-[#0E141B] h-[59px] px-[20px] flex justify-between items-center sticky top-0 z-100">
       <div className="logoAndMainLinks flex items-center">
         <div className="icons flex gap-[13px]" >
           <IoIosArrowBack size={"17px"} color="#767f8b"/>
